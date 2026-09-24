@@ -1,0 +1,73 @@
+JOB DESCRIPTION
+
+Job Title: Full Stack Developer
+
+Company: TechSolutions Pvt. Ltd.
+Location: Chennai, India
+Experience Required: 1–3 years
+
+ABOUT THE ROLE
+
+We are looking for a Full Stack Developer to design, develop, test, and maintain web applications. The candidate will work on both frontend and backend components and collaborate with developers, testers, and other team members to deliver reliable software solutions.
+
+REQUIRED SKILLS
+
+- JavaScript
+- HTML
+- CSS
+- React.js
+- Node.js
+- Java
+- Spring Boot
+- REST APIs
+- SQL
+- MySQL
+- Git
+- GitHub
+- Object-Oriented Programming
+
+PREFERRED SKILLS
+
+- TypeScript
+- Next.js
+- Angular
+- Express.js
+- MongoDB
+- PostgreSQL
+- Docker
+- AWS
+- Redis
+- Microservices
+- CI/CD
+- Jest
+- JUnit
+
+EDUCATION
+
+- Bachelor's degree in Computer Science, Information Technology, or a related field.
+
+RESPONSIBILITIES
+
+- Develop responsive and user-friendly web applications.
+- Build frontend interfaces using React.js, JavaScript, HTML, and CSS.
+- Develop backend services using Java, Spring Boot, and Node.js.
+- Design and integrate REST APIs.
+- Develop and maintain database queries and data models.
+- Write clean, reusable, and maintainable code.
+- Perform unit testing and debugging.
+- Participate in code reviews.
+- Use Git and GitHub for version control.
+- Troubleshoot and resolve application issues.
+- Collaborate with frontend, backend, QA, and other development teams.
+- Improve application performance, reliability, and scalability.
+- Participate in the complete software development lifecycle.
+
+ADDITIONAL REQUIREMENTS
+
+- Strong understanding of frontend and backend development concepts.
+- Good understanding of RESTful APIs.
+- Knowledge of relational databases and SQL.
+- Understanding of object-oriented programming.
+- Good problem-solving and debugging skills.
+- Ability to work effectively in a team environment.
+- Willingness to learn new technologies.

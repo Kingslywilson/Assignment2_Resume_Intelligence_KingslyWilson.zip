@@ -1,0 +1,62 @@
+JOB DESCRIPTION
+
+Job Title: Java Developer
+
+Company: TechSolutions Pvt. Ltd.
+Location: Chennai, India
+Experience Required: 1–3 years
+
+ABOUT THE ROLE
+
+We are looking for a Java Developer to design, develop, test, and maintain backend applications. The candidate will work with the development team to build scalable and reliable software solutions.
+
+REQUIRED SKILLS
+
+- Java
+- Spring Boot
+- Spring Framework
+- REST APIs
+- SQL
+- MySQL
+- Git
+- Maven
+- Object-Oriented Programming
+- Data Structures and Algorithms
+
+PREFERRED SKILLS
+
+- Hibernate
+- JPA
+- Microservices
+- Docker
+- Kafka
+- Redis
+- AWS
+- JUnit
+- CI/CD
+- PostgreSQL
+
+EDUCATION
+
+- Bachelor's degree in Computer Science, Information Technology, or a related field.
+
+RESPONSIBILITIES
+
+- Develop and maintain backend applications using Java and Spring Boot.
+- Design and implement REST APIs.
+- Develop database queries and work with relational databases.
+- Write clean, maintainable, and reusable code.
+- Perform unit testing and debugging.
+- Participate in code reviews.
+- Work with Git and Maven for development and build management.
+- Collaborate with frontend developers, testers, and other team members.
+- Troubleshoot and resolve application issues.
+- Contribute to application performance and reliability improvements.
+
+ADDITIONAL REQUIREMENTS
+
+- Good understanding of object-oriented programming concepts.
+- Strong problem-solving and debugging skills.
+- Ability to work effectively in a team environment.
+- Good understanding of software development practices.
+- Willingness to learn new technologies.

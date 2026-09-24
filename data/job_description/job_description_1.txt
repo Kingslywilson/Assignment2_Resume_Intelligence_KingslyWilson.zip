@@ -1,0 +1,57 @@
+JOB TITLE: Python Backend Developer
+
+COMPANY: TechNova Solutions
+
+LOCATION: Chennai, India
+
+EMPLOYMENT TYPE: Full-time
+
+JOB SUMMARY:
+
+We are looking for a Python Backend Developer to build and maintain scalable backend applications and REST APIs. The candidate will work on backend services, databases, API development, and cloud-based applications.
+
+REQUIRED SKILLS:
+
+- Python
+- FastAPI
+- REST API development
+- PostgreSQL
+- Git
+- Docker
+
+PREFERRED SKILLS:
+
+- LangChain
+- RAG
+- FAISS
+- AWS
+- Redis
+
+REQUIRED EXPERIENCE:
+
+- 1–3 years of backend development experience
+- Experience developing REST APIs using Python
+- Experience working with relational databases
+
+EDUCATION:
+
+- Bachelor's degree in Computer Science, Information Technology, Software Engineering, or a related field
+
+RESPONSIBILITIES:
+
+- Develop and maintain backend applications using Python
+- Design and implement REST APIs
+- Work with PostgreSQL databases
+- Write clean and maintainable code
+- Debug and resolve backend issues
+- Collaborate with other developers
+- Use Git for version control
+- Containerize applications using Docker
+- Participate in code reviews and technical discussions
+
+ADDITIONAL REQUIREMENTS:
+
+- Good problem-solving skills
+- Understanding of software development practices
+- Ability to work effectively in a team
+- Good communication skills
