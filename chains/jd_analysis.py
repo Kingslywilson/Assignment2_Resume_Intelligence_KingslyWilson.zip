@@ -1,9 +1,3 @@
-"""
-Chain 4: Job Description Analysis.
-Analyzes job description text and extracts required skills, preferred skills, required experience, qualifications, and responsibilities.
-Uses PydanticOutputParser.
-"""
-
 import os
 from typing import Dict, Any
 from langchain_groq import ChatGroq
@@ -21,11 +15,8 @@ def load_prompt() -> str:
 
 
 def analyze_job_description(job_description_text: str, llm: ChatGroq = None) -> JobDescriptionAnalysis:
-    """
-    Executes Job Description Analysis chain.
-    """
     if llm is None:
-        model_name = os.getenv("GROQ_MODEL") or os.getenv("GROQ_MODEL_NAME") or "llama-3.3-70b-versatile"
+        model_name = os.getenv("GROQ_MODEL") or os.getenv("GROQ_MODEL_NAME") or "openai/gpt-oss-120b"
         llm = ChatGroq(model=model_name, temperature=0.0)
 
     parser = get_pydantic_parser(JobDescriptionAnalysis)

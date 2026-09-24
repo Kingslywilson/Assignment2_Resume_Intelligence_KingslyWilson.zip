@@ -1,8 +1,3 @@
-"""
-Resume Loader module.
-Handles loading and extracting text from PDF resumes using PyPDFLoader with robust error handling.
-"""
-
 import os
 import glob
 from typing import List, Dict, Any, Tuple
@@ -10,16 +5,11 @@ from langchain_community.document_loaders import PyPDFLoader
 
 
 def generate_candidate_id(index: int) -> str:
-    """Generate candidate ID like CAND001, CAND002."""
     return f"CAND{index + 1:03d}"
 
 
 def load_single_resume(pdf_path: str, candidate_id: str) -> Dict[str, Any]:
-    """
-    Loads and extracts text from a single PDF resume using PyPDFLoader.
-    Preserves original filename, candidate ID, and page metadata.
-    Returns a dictionary containing extracted text and metadata, or an error status.
-    """
+    
     filename = os.path.basename(pdf_path)
     result = {
         "candidate_id": candidate_id,
@@ -77,10 +67,6 @@ def load_single_resume(pdf_path: str, candidate_id: str) -> Dict[str, Any]:
 
 
 def load_resumes_from_directory(resumes_dir: str) -> List[Dict[str, Any]]:
-    """
-    Loads all PDF resumes from the specified directory.
-    Processes each resume independently so a failed file does not crash the app.
-    """
     if not os.path.exists(resumes_dir):
         os.makedirs(resumes_dir, exist_ok=True)
         print(f"Created directory: {resumes_dir}")

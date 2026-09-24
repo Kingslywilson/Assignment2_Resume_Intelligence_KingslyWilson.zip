@@ -1,7 +1,3 @@
-"""
-Pydantic Models for Resume Intelligence Platform.
-Defines schemas for candidate extraction, skills, experience, JD analysis, matching, scoring, and recommendation.
-"""
 
 from typing import List, Optional, Dict, Any
 from pydantic import BaseModel, Field

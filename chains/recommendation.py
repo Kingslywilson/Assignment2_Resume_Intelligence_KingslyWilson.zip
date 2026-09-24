@@ -1,10 +1,3 @@
-"""
-Chain 7: Recruiter Recommendation.
-Generates an analytical recommendation for recruiters (Strong Match, Potential Match, Needs Further Review, Low Match)
-along with key strengths, missing requirements, and interview verification areas.
-Uses PydanticOutputParser.
-"""
-
 import os
 from typing import Dict, Any
 from langchain_groq import ChatGroq
@@ -31,11 +24,8 @@ def generate_recommendation(
     jd_analysis: JobDescriptionAnalysis,
     llm: ChatGroq = None
 ) -> RecruiterRecommendation:
-    """
-    Executes Recruiter Recommendation chain.
-    """
     if llm is None:
-        model_name = os.getenv("GROQ_MODEL") or os.getenv("GROQ_MODEL_NAME") or "llama-3.3-70b-versatile"
+        model_name = os.getenv("GROQ_MODEL") or os.getenv("GROQ_MODEL_NAME") or "openai/gpt-oss-120b"
         llm = ChatGroq(model=model_name, temperature=0.0)
 
     parser = get_pydantic_parser(RecruiterRecommendation)

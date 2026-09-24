@@ -1,9 +1,3 @@
-"""
-Chain 5: Candidate-to-JD Matching.
-Compares candidate profile against Job Description requirements.
-Demonstrates JsonOutputParser for flexible data structure extraction.
-"""
-
 import os
 import json
 from typing import Dict, Any
@@ -31,9 +25,7 @@ def match_candidate_to_jd(
     jd_analysis: JobDescriptionAnalysis,
     llm: ChatGroq = None
 ) -> JobMatchAnalysis:
-    """
-    Executes Candidate-to-JD Matching chain.
-    """
+
     if llm is None:
         model_name = os.getenv("GROQ_MODEL") or os.getenv("GROQ_MODEL_NAME") or "openai/gpt-oss-120b"
         llm = ChatGroq(model=model_name, temperature=0.0)

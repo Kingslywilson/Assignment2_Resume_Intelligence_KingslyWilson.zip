@@ -1,9 +1,3 @@
-"""
-Chain 3: Experience Classification.
-Classifies candidate experience level (Fresher, Internship, Entry-level, Experienced) and extracts relevant experience details.
-Demonstrates JsonOutputParser usage.
-"""
-
 import os
 import json
 from typing import Dict, Any
@@ -22,11 +16,8 @@ def load_prompt() -> str:
 
 
 def classify_experience(resume_text: str, llm: ChatGroq = None) -> ExperienceClassification:
-    """
-    Executes Experience Classification chain using JsonOutputParser.
-    """
     if llm is None:
-        model_name = os.getenv("GROQ_MODEL") or os.getenv("GROQ_MODEL_NAME") or "llama-3.3-70b-versatile"
+        model_name = os.getenv("GROQ_MODEL") or os.getenv("GROQ_MODEL_NAME") or "openai/gpt-oss-120b"
         llm = ChatGroq(model=model_name, temperature=0.0)
 
     json_parser = get_json_parser()

@@ -1,9 +1,3 @@
-"""
-Vector Store module.
-Manages candidate embeddings generation and FAISS vector index building/persistence.
-Uses HuggingFace Embeddings and FAISS for semantic candidate retrieval.
-"""
-
 import os
 from typing import List, Dict, Any, Tuple
 from langchain_community.embeddings import HuggingFaceEmbeddings
@@ -15,10 +9,6 @@ VECTOR_DB_DIR = os.path.join(os.path.dirname(__file__), "outputs", "faiss_index"
 
 
 def get_embedding_function():
-    """
-    Returns local HuggingFace embeddings model (sentence-transformers/all-MiniLM-L6-v2)
-    with normalized embeddings for precise cosine similarity metric thresholding.
-    """
     return HuggingFaceEmbeddings(
         model_name="sentence-transformers/all-MiniLM-L6-v2",
         encode_kwargs={"normalize_embeddings": True}
@@ -26,29 +16,21 @@ def get_embedding_function():
 
 
 def build_candidate_document(profile: CandidateProfile) -> Document:
-    """
-    Constructs a LangChain Document containing only professional skills, experience, projects,
-    certifications, and technology history for vector embedding.
-    EXCLUDES personal identifiable information (email, phone, address).
-    """
     info = profile.candidate_info
     skills = profile.skills
     exp = profile.experience
 
-    # Gather skills across categories
     all_skills_list = []
     for field_name, val in skills.model_dump().items():
         if isinstance(val, list):
             all_skills_list.extend(val)
 
-    # Format project descriptions
     project_texts = []
     for p in info.projects:
         tech_str = f" (Tech: {', '.join(p.technologies)})" if p.technologies else ""
         desc_str = f": {p.description}" if p.description else ""
         project_texts.append(f"Project '{p.title}'{tech_str}{desc_str}")
 
-    # Build concise professional text representation
     doc_content = (
         f"Candidate ID: {profile.candidate_id}\n"
         f"Name: {profile.candidate_name}\n"
@@ -81,9 +63,6 @@ def build_candidate_document(profile: CandidateProfile) -> Document:
 
 
 def build_and_save_vector_store(profiles: List[CandidateProfile], db_dir: str = VECTOR_DB_DIR) -> FAISS:
-    """
-    Builds a FAISS vector database from a list of candidate profiles and saves it locally.
-    """
     if not profiles:
         print("No candidate profiles provided to build vector store.")
         return None
@@ -101,9 +80,6 @@ def build_and_save_vector_store(profiles: List[CandidateProfile], db_dir: str = 
 
 
 def load_vector_store(db_dir: str = VECTOR_DB_DIR) -> FAISS:
-    """
-    Loads FAISS vector database from local directory.
-    """
     if not os.path.exists(db_dir):
         return None
 

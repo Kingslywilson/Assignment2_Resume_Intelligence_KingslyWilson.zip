@@ -1,14 +1,3 @@
-"""
-Chain 6: Explainable Candidate Scoring.
-Computes a quantitative, transparent 0-100 job match score based on documented criteria:
-- Skills Match (40%)
-- Relevant Experience (25%)
-- Projects (15%)
-- Education (10%)
-- Additional Requirements (10%)
-Uses PydanticOutputParser for strict score validation.
-"""
-
 import os
 from typing import Dict, Any
 from langchain_groq import ChatGroq
@@ -36,12 +25,8 @@ def calculate_candidate_score(
     job_match: JobMatchAnalysis,
     llm: ChatGroq = None
 ) -> ExplainableScoring:
-    """
-    Executes Explainable Scoring chain.
-    Ensures final overall_score is between 0.0 and 100.0.
-    """
     if llm is None:
-        model_name = os.getenv("GROQ_MODEL") or os.getenv("GROQ_MODEL_NAME") or "llama-3.3-70b-versatile"
+        model_name = os.getenv("GROQ_MODEL") or os.getenv("GROQ_MODEL_NAME") or "openai/gpt-oss-120b"
         llm = ChatGroq(model=model_name, temperature=0.0)
 
     parser = get_pydantic_parser(ExplainableScoring)
