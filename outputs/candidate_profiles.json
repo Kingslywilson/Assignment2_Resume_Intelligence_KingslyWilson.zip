@@ -76,7 +76,8 @@
       ],
       "frameworks": [
         "Spring Boot",
-        "React.js"
+        "React.js",
+        "Node.js"
       ],
       "databases": [
         "MongoDB",
@@ -88,9 +89,10 @@
         "GitHub Copilot"
       ],
       "backend_technologies": [
-        "Node.js",
         "REST APIs",
-        "JWT"
+        "Spring Boot",
+        "Node.js",
+        "Spring Data JPA"
       ],
       "frontend_technologies": [
         "React.js"
@@ -101,94 +103,127 @@
       "testing_tools": [],
       "other_technical_skills": [
         "Git",
+        "JWT",
         "Blockchain",
         "Smart Contracts"
       ]
     },
     "experience": {
       "experience_category": "Internship experience",
-      "total_professional_experience": "0 years (no full\u2011time professional experience)",
-      "relevant_experience": "Web Development Intern at ennoViQ Educator & DLQ Technologies (Oct\u202f2023\u202f\u2013\u202fDec\u202f2024) \u2013 approximately 14 months",
+      "total_professional_experience": "0 years",
+      "relevant_experience": "Web Development Intern at ennoViQ Educator & DLQ Technologies (Oct 2023 \u2013 Dec 2024)",
       "internship_duration": "14 months",
       "relevant_projects": [
         "Blockchain-Based Smart City Complaint System",
         "URL Shortener with Analytics"
       ],
       "role_exposure": [
-        "Full\u2011stack web development (React.js, Node.js, Spring Boot)",
-        "Backend development with REST APIs",
-        "Frontend development and responsive UI design",
-        "Database design and management (MongoDB, MySQL)",
+        "Full\u2011stack web development",
+        "Backend development (REST APIs, Spring Boot, Node.js)",
+        "Frontend development (React.js)",
+        "Database management (MongoDB, MySQL)",
+        "Containerization with Docker",
         "Blockchain integration and smart contracts",
-        "Containerization using Docker",
-        "JWT\u2011based authentication and security",
-        "Code reviews, debugging, testing, and version control (Git)"
+        "JWT\u2011based authentication",
+        "Code debugging, testing, and code reviews"
       ]
     },
     "job_match": {
-      "matched_skills": [],
-      "missing_skills": [],
-      "additional_relevant_skills": [],
-      "relevant_experience_match": "Not evaluated",
-      "project_alignment": "Not evaluated",
-      "qualification_alignment": "Not evaluated",
-      "technology_alignment": "Not evaluated"
+      "matched_skills": [
+        "Python",
+        "REST API development",
+        "Git",
+        "Docker"
+      ],
+      "missing_skills": [
+        "FastAPI",
+        "PostgreSQL",
+        "LangChain",
+        "RAG",
+        "FAISS",
+        "AWS",
+        "Redis"
+      ],
+      "additional_relevant_skills": [
+        "Java",
+        "JavaScript",
+        "C++",
+        "SQL",
+        "Spring Boot",
+        "Node.js",
+        "MongoDB",
+        "MySQL",
+        "React.js",
+        "JWT",
+        "Blockchain",
+        "Smart Contracts",
+        "GitHub Copilot"
+      ],
+      "relevant_experience_match": "The candidate has 14 months of internship experience in full\u2011stack web development, including backend work with REST APIs, but lacks professional (paid) experience and does not have Python\u2011based backend work; thus does not fully meet the 1\u20133 year Python backend requirement.",
+      "project_alignment": "Projects demonstrate full\u2011stack development, REST API design, Docker containerization, JWT authentication, and database work (MySQL, MongoDB), aligning with many JD responsibilities, but they are built with Java/Spring Boot and Node.js rather than Python/FastAPI and use MySQL/MongoDB instead of PostgreSQL.",
+      "qualification_alignment": "Candidate holds a B.Tech in Information Technology, satisfying the bachelor's degree requirement, though graduation is pending in 2026.",
+      "technology_alignment": "Overlap exists in Python, REST APIs, Git, and Docker. Significant gaps include lack of FastAPI, PostgreSQL, and primary experience in Java/Spring Boot and Node.js rather than Python."
     },
     "scoring": {
-      "overall_score": 66.7,
+      "overall_score": 56.2,
       "category_scores": [
         {
           "category_name": "Skills Match",
           "score": 66.7,
           "weight_percent": 40.0,
           "weighted_score": 26.68,
-          "justification": "The candidate possesses Python, REST API development, Git, and Docker, which satisfy 4 of the 6 required skills (66.7%). Missing required skills are FastAPI and PostgreSQL. No preferred skills from the JD are present."
+          "justification": "The candidate demonstrates proficiency in 4 of the 6 required skills (Python, REST API development, Git, Docker). They lack FastAPI and PostgreSQL, which are core to the role. No preferred skills are present."
         },
         {
           "category_name": "Relevant Experience",
-          "score": 70.0,
+          "score": 50.0,
           "weight_percent": 25.0,
-          "weighted_score": 17.5,
-          "justification": "The candidate has 1 year 2 months of internship experience (\u22481.2 years), meeting the JD's 1\u20133 year range. Experience includes full\u2011stack web development and REST API work, but lacks Python\u2011based backend work and experience with a relational database such as PostgreSQL. This partial relevance yields a score of 70."
+          "weighted_score": 12.5,
+          "justification": "The candidate has 14 months of internship experience (\u22481.2 years) which satisfies the minimum duration but is not professional paid experience. Experience is in backend development with REST APIs, however it is done in Java/Spring Boot and Node.js, not Python, and relational DB work is limited to MySQL, not PostgreSQL."
         },
         {
           "category_name": "Projects",
-          "score": 50.0,
+          "score": 40.0,
           "weight_percent": 15.0,
-          "weighted_score": 7.5,
-          "justification": "Two projects are listed. The URL Shortener project aligns with backend development, REST APIs, Docker, and a relational database (MySQL), covering several JD responsibilities. The Blockchain complaint system is unrelated to Python backend work. Overall, 1 of 2 projects (50%) is relevant, resulting in a score of 50."
+          "weighted_score": 6.0,
+          "justification": "Both projects involve full\u2011stack development, REST API design, Docker containerization, and database usage, aligning with many responsibilities. However, they are built with Java/Spring Boot and Node.js, lack Python/FastAPI, and use MySQL/MongoDB instead of PostgreSQL."
         },
         {
           "category_name": "Education",
-          "score": 100.0,
+          "score": 80.0,
           "weight_percent": 10.0,
-          "weighted_score": 10.0,
-          "justification": "The candidate holds a B.Tech in Information Technology, which satisfies the JD's requirement for a bachelor's degree in Computer Science, IT, Software Engineering, or a related field."
+          "weighted_score": 8.0,
+          "justification": "The candidate holds a B.Tech in Information Technology, which meets the bachelor's degree requirement. Graduation is pending (2026), so the qualification is not yet fully realized, resulting in a slight deduction."
         },
         {
           "category_name": "Additional Requirements",
-          "score": 50.0,
+          "score": 30.0,
           "weight_percent": 10.0,
-          "weighted_score": 5.0,
-          "justification": "Certifications (Google AI, C & C++ Programming) are valuable but not directly related to the Python backend role. The candidate lacks the preferred technologies (LangChain, RAG, FAISS, AWS, Redis) and has no explicit evidence of the soft\u2011skill criteria beyond typical internship collaboration."
+          "weighted_score": 3.0,
+          "justification": "Certifications (Google AI, C & C++ Programming) are relevant but do not address the preferred stack (LangChain, RAG, FAISS, AWS, Redis). No evidence of the listed preferred technologies or explicit soft\u2011skill assessments."
         }
       ],
       "missing_requirements": [
         "FastAPI",
         "PostgreSQL",
-        "Python backend development experience in production",
-        "Preferred skills: LangChain, RAG, FAISS, AWS, Redis"
+        "Professional paid backend experience",
+        "Python backend development experience (beyond language knowledge)",
+        "LangChain",
+        "RAG",
+        "FAISS",
+        "AWS",
+        "Redis"
       ],
-      "scoring_breakdown_summary": "The overall match score of 66.7 results from a strong education fit and adequate experience duration, but gaps in required technical skills (FastAPI, PostgreSQL) and limited relevance of projects and additional technologies reduce the total."
+      "scoring_breakdown_summary": "The overall score of 56.2 results from weighted contributions of five categories. Strong points are the candidate's basic skill overlap (Python, REST APIs, Git, Docker) and meeting the degree requirement. Significant gaps include missing FastAPI and PostgreSQL expertise, lack of Python\u2011centric professional experience, and absence of preferred technologies, which lower the scores in relevant experience, projects, and additional requirements."
     },
     "recommendation": {
       "recommendation_category": "Needs Further Review",
       "key_strengths": [
-        "Bachelor's degree in Information Technology (B.Tech) \u2013 meets education requirement",
         "Solid foundation in Python programming",
-        "Hands\u2011on experience with REST API development, Git version control, and Docker containerization",
-        "1 year 2 months of internship experience in full\u2011stack web development",
-        "Implemented a URL Shortener project using Docker and a relational database (MySQL)"
+        "Hands\u2011on experience building REST APIs",
+        "Proficiency with Git version control and Docker containerization",
+        "14\u202fmonths of full\u2011stack internship experience covering backend development, JWT authentication, and database integration",
+        "B.Tech in Information Technology (degree on track for 2026)"
       ],
       "relevant_skills": [
         "Python",
@@ -196,553 +231,31 @@
         "Git",
         "Docker"
       ],
-      "relevant_experience_summary": "The candidate completed a 1.2\u2011year internship where they contributed to full\u2011stack web applications, built RESTful services in Python, and utilized Git and Docker for source control and deployment. The experience includes backend work but does not demonstrate production\u2011grade Python backend development with FastAPI or direct use of PostgreSQL.",
+      "relevant_experience_summary": "The candidate completed a 14\u2011month internship where they contributed to full\u2011stack web applications, designing and consuming REST APIs, containerizing services with Docker, and implementing authentication (JWT). Backend work was performed primarily with Java/Spring Boot and Node.js, and databases used were MySQL and MongoDB. No paid professional experience is documented, and Python\u2011centric backend work is limited to language familiarity rather than production\u2011grade implementations.",
       "missing_requirements": [
-        "FastAPI",
-        "PostgreSQL",
-        "Demonstrated Python backend development in a production environment",
-        "Preferred technologies: LangChain, RAG, FAISS, AWS, Redis"
+        "FastAPI expertise",
+        "PostgreSQL experience",
+        "Professional (paid) backend development experience",
+        "Demonstrated Python backend development beyond language knowledge",
+        "LangChain",
+        "Retrieval\u2011Augmented Generation (RAG)",
+        "FAISS",
+        "AWS cloud services",
+        "Redis"
       ],
       "areas_requiring_verification": [
-        "Any exposure to FastAPI or willingness/ability to learn it quickly",
-        "Depth of experience with relational databases beyond MySQL (e.g., PostgreSQL)",
-        "Specific responsibilities and complexity of Python backend tasks during the internship",
-        "Proficiency in writing clean, maintainable code and conducting code reviews",
-        "Soft\u2011skill evidence: teamwork, communication, problem\u2011solving in a professional setting"
+        "Depth of Python usage in the internship projects (e.g., scripts, automation, or micro\u2011services)",
+        "Ability and willingness to quickly learn FastAPI and migrate existing API concepts to it",
+        "Transferable relational\u2011database concepts that could apply to PostgreSQL (e.g., SQL proficiency, schema design)",
+        "Any informal or side\u2011project exposure to PostgreSQL, AWS, or Redis not captured on the resume",
+        "Soft\u2011skill evidence: problem\u2011solving approach, teamwork, and communication abilities",
+        "Readiness to transition from Java/Node.js stack to a Python\u2011first backend environment"
       ],
-      "overall_jd_alignment_summary": "The candidate aligns well on education and possesses core Python, REST API, Git, and Docker skills, with sufficient internship duration. However, critical required technologies\u2014FastAPI and PostgreSQL\u2014are absent, and there is limited evidence of production\u2011level Python backend work. While the profile shows promise, the gaps warrant a focused interview to verify technical adaptability and soft\u2011skill fit before proceeding further."
+      "overall_jd_alignment_summary": "The candidate shows moderate alignment with the core technical requirements (Python, REST APIs, Git, Docker) and meets the educational criterion. However, critical gaps exist in FastAPI, PostgreSQL, and professional Python backend experience, which are essential for the role. While the internship provides relevant exposure, the stack mismatch and lack of paid experience lower confidence. The candidate could be considered for further review if they demonstrate strong learning agility and can quickly acquire the missing technologies."
     }
   },
   {
     "candidate_id": "CAND002",
-    "candidate_name": "Kingsly Wilson K",
-    "resume_filename": "Kingsly Wilson K  May26\u2013 Resume.pdf",
-    "candidate_info": {
-      "candidate_name": "Kingsly Wilson K",
-      "email": "wilsonkingsly71@gmail.com",
-      "phone": "+91-7540050379",
-      "location": null,
-      "education": [
-        {
-          "degree": "B.Tech",
-          "specialization": "Information Technology",
-          "institution": "Velammal Engineering College",
-          "graduation_year": "2026"
-        },
-        {
-          "degree": "HSC",
-          "specialization": null,
-          "institution": "Sri Vaiyapuri Vidyalaya Matric Hr. Sec. School",
-          "graduation_year": "2022"
-        },
-        {
-          "degree": "SSLC",
-          "specialization": null,
-          "institution": "Sri Vaiyapuri Vidyalaya Matric Hr. Sec. School",
-          "graduation_year": "2020"
-        }
-      ],
-      "certifications": [
-        "Google AI Certification",
-        "C & C++ Programming Certification"
-      ],
-      "job_titles": [
-        "Web Development Intern"
-      ],
-      "companies": [
-        "ennoViQ Educator & DLQ Technologies"
-      ],
-      "projects": [
-        {
-          "title": "Blockchain-Based Smart City Complaint System",
-          "description": "Built a full-stack decentralized complaint management system using React.js frontend, Node.js backend, and MongoDB, allowing citizens to submit city complaints online with real-time tracking. Integrated blockchain smart contracts to ensure data immutability, preventing tampering of complaint records and enhancing transparency and public trust in the grievance redressal process.",
-          "technologies": [
-            "React.js",
-            "Node.js",
-            "MongoDB",
-            "Blockchain",
-            "Smart Contracts"
-          ],
-          "role": null
-        },
-        {
-          "title": "Knee Osteoarthritis Prediction System",
-          "description": "Built a deep learning-based prediction system using CNN architectures to classify knee osteoarthritis severity from X-ray images, enabling early medical diagnosis support. Implemented an end-to-end pipeline including image preprocessing, feature extraction, and model training, achieving reliable classification across severity grades.",
-          "technologies": [
-            "Python",
-            "Deep Learning",
-            "CNN",
-            "Image Processing"
-          ],
-          "role": null
-        }
-      ],
-      "total_experience": "1 year 3 months"
-    },
-    "skills": {
-      "programming_languages": [
-        "Java",
-        "JavaScript",
-        "C++",
-        "C",
-        "SQL",
-        "Python"
-      ],
-      "frameworks": [
-        "Express.js"
-      ],
-      "databases": [
-        "MongoDB"
-      ],
-      "cloud_technologies": [],
-      "ai_ml": [
-        "Deep Learning",
-        "CNN",
-        "Image Processing"
-      ],
-      "generative_ai": [],
-      "backend_technologies": [
-        "Node.js",
-        "REST APIs"
-      ],
-      "frontend_technologies": [
-        "React.js"
-      ],
-      "devops": [],
-      "testing_tools": [],
-      "other_technical_skills": [
-        "Blockchain",
-        "Smart Contracts",
-        "Object Oriented Programming",
-        "System Design",
-        "Operating System"
-      ]
-    },
-    "experience": {
-      "experience_category": "Internship experience",
-      "total_professional_experience": "0 years",
-      "relevant_experience": "Web Development Intern (Oct\u202f2023\u202f\u2013\u202fDec\u202f2024) \u2013 approx. 1 year 2 months of full\u2011stack development",
-      "internship_duration": "Oct\u202f2023\u202f\u2013\u202fDec\u202f2024 (\u22481 year 2 months)",
-      "relevant_projects": [
-        "Blockchain\u2011Based Smart City Complaint System (React.js, Node.js, MongoDB, Blockchain, Smart Contracts)",
-        "Knee Osteoarthritis Prediction System (Python, Deep Learning, CNN, Image Processing)"
-      ],
-      "role_exposure": [
-        "Full\u2011stack web development",
-        "Front\u2011end development with React.js",
-        "Back\u2011end development with Node.js/Express.js",
-        "Database design and management with MongoDB",
-        "Integration of blockchain smart contracts",
-        "Team\u2011based software development workflow"
-      ]
-    },
-    "job_match": {
-      "matched_skills": [
-        "Python",
-        "REST API development"
-      ],
-      "missing_skills": [
-        "FastAPI",
-        "PostgreSQL",
-        "Git",
-        "Docker",
-        "LangChain",
-        "RAG",
-        "FAISS",
-        "AWS",
-        "Redis"
-      ],
-      "additional_relevant_skills": [
-        "Java",
-        "JavaScript",
-        "C++",
-        "C",
-        "SQL",
-        "Express.js",
-        "Node.js",
-        "MongoDB",
-        "React.js",
-        "Blockchain",
-        "Smart Contracts",
-        "Deep Learning",
-        "CNN",
-        "Image Processing",
-        "System Design",
-        "Object Oriented Programming"
-      ],
-      "relevant_experience_match": "The candidate has ~1 year 2 months of full\u2011stack web development internship experience, satisfying the JD's minimum years (1 year). However, the experience is primarily with JavaScript/Node.js and MongoDB, not Python or relational databases, so the match is partial.",
-      "project_alignment": "The Blockchain\u2011Based Smart City Complaint System demonstrates full\u2011stack development, REST API creation, and database work (MongoDB), aligning with many backend responsibilities but not with Python, FastAPI, or PostgreSQL. The Knee Osteoarthritis Prediction System showcases Python programming and AI/ML skills, which is relevant to Python proficiency but does not involve backend API or database work. Overall, projects provide moderate alignment with the role\u2019s responsibilities.",
-      "qualification_alignment": "The candidate holds a B.Tech in Information Technology, which satisfies the JD\u2019s requirement for a bachelor's degree in Computer Science, IT, Software Engineering, or a related field.",
-      "technology_alignment": "The candidate\u2019s primary stack (JavaScript, Node.js, Express, React, MongoDB, Blockchain) differs from the JD\u2019s Python\u2011FastAPI\u2011PostgreSQL\u2011Docker focus. While there is overlap in general backend concepts and REST API development, the specific technologies demanded by the role are largely missing, resulting in partial technology alignment."
-    },
-    "scoring": {
-      "overall_score": 44.8,
-      "category_scores": [
-        {
-          "category_name": "Skills Match",
-          "score": 33.3,
-          "weight_percent": 40.0,
-          "weighted_score": 13.32,
-          "justification": "The candidate demonstrates proficiency in Python and REST API development, matching 2 of the 6 required skills (33.3%). They lack experience with FastAPI, PostgreSQL, Git, and Docker, and none of the preferred skills are present."
-        },
-        {
-          "category_name": "Relevant Experience",
-          "score": 50.0,
-          "weight_percent": 25.0,
-          "weighted_score": 12.5,
-          "justification": "The candidate has ~1.2 years of full\u2011stack web development internship, satisfying the minimum 1\u2011year requirement. However, the experience is centered on JavaScript/Node.js and MongoDB, not Python or relational databases, resulting in a partial relevance score."
-        },
-        {
-          "category_name": "Projects",
-          "score": 40.0,
-          "weight_percent": 15.0,
-          "weighted_score": 6.0,
-          "justification": "One project (Smart City Complaint System) shows full\u2011stack and REST API work but uses MongoDB and JavaScript, not Python/FastAPI/PostgreSQL. The second project uses Python for deep learning but lacks backend/API or database components. Overall project relevance to the role is moderate."
-        },
-        {
-          "category_name": "Education",
-          "score": 100.0,
-          "weight_percent": 10.0,
-          "weighted_score": 10.0,
-          "justification": "The candidate holds a B.Tech in Information Technology, which satisfies the JD\u2019s requirement for a bachelor's degree in a related field."
-        },
-        {
-          "category_name": "Additional Requirements",
-          "score": 30.0,
-          "weight_percent": 10.0,
-          "weighted_score": 3.0,
-          "justification": "Certifications (Google AI, C & C++ Programming) are valuable but do not address the preferred stack (LangChain, RAG, FAISS, AWS, Redis) or demonstrate Git/Docker usage. Consequently, the alignment with additional requirements is low."
-        }
-      ],
-      "missing_requirements": [
-        "FastAPI",
-        "PostgreSQL",
-        "Git",
-        "Docker",
-        "LangChain",
-        "RAG",
-        "FAISS",
-        "AWS",
-        "Redis",
-        "Python backend experience",
-        "Relational database experience"
-      ],
-      "scoring_breakdown_summary": "The overall score of 44.8 is derived by weighting five categories: Skills Match (40%), Relevant Experience (25%), Projects (15%), Education (10%), and Additional Requirements (10%). The candidate meets the education criterion fully, has sufficient overall experience duration, but lacks key required technologies (FastAPI, PostgreSQL, Git, Docker) and preferred stack items, resulting in moderate to low scores in most categories and a final composite score reflecting partial fit."
-    },
-    "recommendation": {
-      "recommendation_category": "Needs Further Review",
-      "key_strengths": [
-        "Bachelor's degree in Information Technology (meets education requirement)",
-        "Solid Python programming experience demonstrated in AI/ML project",
-        "Proven ability to design and implement REST APIs (Smart City Complaint System)",
-        "Full\u2011stack development experience (~1.2 years internship) with end\u2011to\u2011end product delivery",
-        "Broad programming foundation (Java, JavaScript, C++, C) and exposure to OOP and system design"
-      ],
-      "relevant_skills": [
-        "Python",
-        "REST API development",
-        "JavaScript / Node.js / Express.js",
-        "SQL (general knowledge)",
-        "MongoDB (NoSQL database experience)",
-        "Object Oriented Programming"
-      ],
-      "relevant_experience_summary": "The candidate completed a 1\u2011year 2\u2011month full\u2011stack web development internship, building a Blockchain\u2011Based Smart City Complaint System that involved REST API creation, backend logic, and database integration (MongoDB). Additionally, they delivered a Knee Osteoarthritis Prediction System using Python and deep\u2011learning techniques. While the internship meets the minimum years of experience, the bulk of the work was centered on JavaScript/Node.js and NoSQL databases rather than Python backend development with relational databases.",
-      "missing_requirements": [
-        "FastAPI",
-        "PostgreSQL (relational database experience)",
-        "Git (version control)",
-        "Docker (containerization)",
-        "LangChain",
-        "RAG",
-        "FAISS",
-        "AWS",
-        "Redis",
-        "Demonstrated Python backend experience with relational databases"
-      ],
-      "areas_requiring_verification": [
-        "Depth of Python usage beyond scripting/ML \u2013 any production\u2011grade backend code?",
-        "Familiarity with or exposure to FastAPI or similar Python web frameworks",
-        "Experience with Git for source control and collaborative development",
-        "Understanding of Docker concepts and any hands\u2011on containerization experience",
-        "Ability to work with relational databases (PostgreSQL or similar) \u2013 any hidden projects or coursework?",
-        "Willingness and speed to acquire the preferred stack (LangChain, RAG, FAISS, AWS, Redis)",
-        "Communication and teamwork skills demonstrated in the internship environment"
-      ],
-      "overall_jd_alignment_summary": "The candidate meets the educational requirement and has relevant overall experience length, but lacks several core technical requirements (FastAPI, PostgreSQL, Git, Docker) and does not have proven Python backend work with relational databases. Projects show moderate alignment through REST API development and Python programming, yet the technology stack diverges from the role\u2019s focus. Given these gaps, the candidate warrants further interview to verify transferable skills, learning agility, and any unlisted experience with the missing technologies before a definitive hiring decision can be made."
-    }
-  },
-  {
-    "candidate_id": "CAND003",
-    "candidate_name": "Kingsly Wilson K",
-    "resume_filename": "Kingsly Wilson K \u2013 UI_UX Designer Resume.pdf",
-    "candidate_info": {
-      "candidate_name": "Kingsly Wilson K",
-      "email": "wilsonkingsly71@gmail.com",
-      "phone": "+91-7540050379",
-      "location": null,
-      "education": [
-        {
-          "degree": "B.Tech",
-          "specialization": "Information Technology",
-          "institution": "Velammal Engineering College",
-          "graduation_year": "2026"
-        },
-        {
-          "degree": "Higher Secondary Certificate (HSC)",
-          "specialization": null,
-          "institution": "Sri Vaiyapuri Vidyalaya Matric Higher Secondary School",
-          "graduation_year": "2022"
-        },
-        {
-          "degree": "Secondary School Leaving Certificate (SSLC)",
-          "specialization": null,
-          "institution": "Sri Vaiyapuri Vidyalaya Matric Higher Secondary School",
-          "graduation_year": "2020"
-        }
-      ],
-      "certifications": [
-        "Google AI Certification",
-        "C & C++ Programming Certification"
-      ],
-      "job_titles": [
-        "Web Development & UI Intern"
-      ],
-      "companies": [
-        "ennoViQ Educator & DLQ Technologies"
-      ],
-      "projects": [
-        {
-          "title": "Blockchain-Based Smart City Complaint System",
-          "description": "Designed and built the user interface for a decentralized complaint management system, focusing on a simple, low-friction submission flow so citizens could report city complaints and track status in real time. Mapped out role-based user flows for citizens and administrators, designing separate dashboard views tailored to each user's goals - registration and tracking for citizens, review and resolution for admins. Paired the interface with blockchain smart contracts on the backend to ensure data integrity, reinforcing user trust in the system without adding complexity to the front-end experience.",
-          "technologies": [
-            "Figma",
-            "React.js",
-            "Node.js",
-            "MongoDB",
-            "Blockchain"
-          ],
-          "role": null
-        },
-        {
-          "title": "Knee Osteoarthritis Prediction System",
-          "description": "Built a deep learning-based prediction system using CNN architectures to classify knee osteoarthritis severity from X-ray images, designed to present results in a clear, non-technical way for early diagnosis support. Implemented an end-to-end pipeline including image preprocessing, feature extraction, and model training, keeping the eventual output interpretable for both clinicians and patients. Evaluated the CNN model on accuracy, precision, and recall, strengthening an eye for how underlying data quality and structure shapes the reliability of a user-facing result.",
-          "technologies": [
-            "Python",
-            "Deep Learning",
-            "CNN",
-            "Image Processing"
-          ],
-          "role": null
-        }
-      ],
-      "total_experience": "Not available"
-    },
-    "skills": {
-      "programming_languages": [
-        "JavaScript",
-        "Python",
-        "C",
-        "C++"
-      ],
-      "frameworks": [
-        "React.js",
-        "Node.js"
-      ],
-      "databases": [
-        "MongoDB"
-      ],
-      "cloud_technologies": [],
-      "ai_ml": [
-        "Deep Learning",
-        "CNN",
-        "Image Processing"
-      ],
-      "generative_ai": [],
-      "backend_technologies": [
-        "Node.js",
-        "REST APIs"
-      ],
-      "frontend_technologies": [
-        "HTML",
-        "CSS"
-      ],
-      "devops": [],
-      "testing_tools": [],
-      "other_technical_skills": [
-        "Figma",
-        "Adobe XD",
-        "Canva",
-        "Photoshop",
-        "Wireframing",
-        "Prototyping",
-        "User Research",
-        "Usability Testing",
-        "Responsive Design",
-        "Design Systems",
-        "User Flows",
-        "Git",
-        "Blockchain"
-      ]
-    },
-    "experience": {
-      "experience_category": "Internship experience",
-      "total_professional_experience": "0 years",
-      "relevant_experience": "14 months (Web Development & UI Intern)",
-      "internship_duration": "14 months",
-      "relevant_projects": [
-        "Blockchain-Based Smart City Complaint System",
-        "Knee Osteoarthritis Prediction System"
-      ],
-      "role_exposure": [
-        "Web Development",
-        "UI/UX Design",
-        "Front-end Development with React.js",
-        "Responsive Layouts",
-        "User Research & Usability Testing",
-        "Design Systems & Wireframing",
-        "Prototyping in Figma",
-        "Integration with backend (Node.js, REST APIs)",
-        "Blockchain concepts (smart contracts)",
-        "Deep Learning model development (CNN) for medical imaging"
-      ]
-    },
-    "job_match": {
-      "matched_skills": [
-        "Python",
-        "REST API development",
-        "Git"
-      ],
-      "missing_skills": [
-        "FastAPI",
-        "PostgreSQL",
-        "Docker",
-        "LangChain",
-        "RAG",
-        "FAISS",
-        "AWS",
-        "Redis"
-      ],
-      "additional_relevant_skills": [
-        "JavaScript",
-        "C",
-        "C++",
-        "React.js",
-        "Node.js",
-        "MongoDB",
-        "Deep Learning",
-        "CNN",
-        "Image Processing",
-        "Figma",
-        "Adobe XD",
-        "Canva",
-        "Photoshop",
-        "Wireframing",
-        "Prototyping",
-        "User Research",
-        "Usability Testing",
-        "Responsive Design",
-        "Design Systems",
-        "User Flows",
-        "Blockchain"
-      ],
-      "relevant_experience_match": "The candidate has 14 months of internship experience focused on web development and UI/UX design, with exposure to REST API integration using Node.js. However, the JD requires 1\u20133 years of professional backend development experience specifically with Python, which the candidate does not possess. Overall, the experience falls short of the required backend experience level.",
-      "project_alignment": "The Blockchain-Based Smart City Complaint System demonstrates experience building a front\u2011end UI with React, integrating REST APIs, and working with a NoSQL database (MongoDB), which aligns partially with the JD's emphasis on API development and database interaction, but it uses Node.js rather than Python and lacks PostgreSQL. The Knee Osteoarthritis Prediction System showcases Python programming and deep\u2011learning skills, but it is a machine\u2011learning model rather than a backend service. Consequently, the projects provide limited alignment with the core responsibilities of a Python backend developer.",
-      "qualification_alignment": "The candidate is pursuing a B.Tech in Information Technology, which satisfies the JD\u2019s educational requirement of a bachelor's degree in a related field. However, the degree is still in progress (expected graduation 2026), so the formal qualification is not yet completed.",
-      "technology_alignment": "There is moderate overlap: both the candidate and the JD list Python, REST APIs, and Git. The candidate\u2019s stack adds JavaScript, React, Node.js, MongoDB, and various UI/UX tools, while the JD expects FastAPI, PostgreSQL, Docker, and optionally cloud/AWS services. The candidate lacks experience with FastAPI, PostgreSQL, and containerization, resulting in partial technology alignment."
-    },
-    "scoring": {
-      "overall_score": 43.0,
-      "category_scores": [
-        {
-          "category_name": "Skills Match",
-          "score": 50.0,
-          "weight_percent": 40.0,
-          "weighted_score": 20.0,
-          "justification": "The candidate demonstrates proficiency in Python, REST API development, and Git, which satisfy 3 of the 6 required skills (50%). However, they lack experience with FastAPI, PostgreSQL, and Docker, and none of the preferred skills are present."
-        },
-        {
-          "category_name": "Relevant Experience",
-          "score": 40.0,
-          "weight_percent": 25.0,
-          "weighted_score": 10.0,
-          "justification": "The candidate has 14 months of internship experience (\u22481.2 years) which meets the lower bound of the 1\u20133 year requirement, but the experience is focused on web UI/React and Node.js backend, not professional Python backend development. The mismatch in technology stack and the internship nature reduce the relevance."
-        },
-        {
-          "category_name": "Projects",
-          "score": 30.0,
-          "weight_percent": 15.0,
-          "weighted_score": 4.5,
-          "justification": "One project (Blockchain\u2011Based Smart City Complaint System) involves REST API integration and database work, but it uses Node.js and MongoDB rather than Python and PostgreSQL. The second project (Knee Osteoarthritis Prediction System) uses Python for deep learning, which is unrelated to backend service development. Overall project alignment with core backend responsibilities is limited."
-        },
-        {
-          "category_name": "Education",
-          "score": 65.0,
-          "weight_percent": 10.0,
-          "weighted_score": 6.5,
-          "justification": "The candidate is pursuing a B.Tech in Information Technology, which aligns with the required bachelor's degree in a related field. However, the degree is not yet completed (expected 2026), so the qualification is only partially satisfied."
-        },
-        {
-          "category_name": "Additional Requirements",
-          "score": 20.0,
-          "weight_percent": 10.0,
-          "weighted_score": 2.0,
-          "justification": "Certifications (Google AI, C & C++ Programming) and other technical skills (e.g., React, MongoDB, blockchain) do not address the JD's additional expectations such as Docker, cloud/AWS, or the preferred AI\u2011augmented tooling (LangChain, RAG, FAISS, Redis). Consequently, the candidate meets few of the extra criteria."
-        }
-      ],
-      "missing_requirements": [
-        "FastAPI",
-        "PostgreSQL",
-        "Docker",
-        "Professional Python backend development experience (1\u20133 years)",
-        "Completed bachelor's degree",
-        "LangChain",
-        "RAG",
-        "FAISS",
-        "AWS",
-        "Redis"
-      ],
-      "scoring_breakdown_summary": "The overall score of 43.0 results from weighted contributions of five categories. Skills match contributed 20 points, relevant experience 10 points, projects 4.5 points, education 6.5 points, and additional requirements 2 points. Major gaps in required backend technologies (FastAPI, PostgreSQL, Docker) and lack of professional Python backend experience lowered the score."
-    },
-    "recommendation": {
-      "recommendation_category": "Low Match",
-      "key_strengths": [
-        "Proficient in Python programming",
-        "Experience building REST APIs (Node.js based) and integrating them with front\u2011end applications",
-        "Solid version\u2011control practice using Git",
-        "Strong UI/UX design background with tools such as Figma, Adobe XD, and Canva",
-        "Exposure to full\u2011stack development (React, Node.js, MongoDB) and deep\u2011learning projects"
-      ],
-      "relevant_skills": [
-        "Python",
-        "REST API development",
-        "Git"
-      ],
-      "relevant_experience_summary": "The candidate completed a 14\u2011month internship focused on web development and UI/UX design, during which they built front\u2011end interfaces with React and integrated REST APIs using Node.js. While the internship duration meets the lower bound of the 1\u20133 year requirement, the experience is centered on JavaScript\u2011based backend work rather than professional Python backend development, which is the core need of the role.",
-      "missing_requirements": [
-        "FastAPI",
-        "PostgreSQL",
-        "Docker",
-        "Professional Python backend development experience (1\u20133 years)",
-        "Completed bachelor's degree (graduation expected 2026)",
-        "LangChain",
-        "RAG",
-        "FAISS",
-        "AWS",
-        "Redis"
-      ],
-      "areas_requiring_verification": [
-        "Depth of Python usage beyond academic projects \u2013 any production\u2011grade Python backend work?",
-        "Understanding of relational database concepts and any exposure to PostgreSQL or similar RDBMS",
-        "Willingness and ability to quickly learn FastAPI and containerization with Docker",
-        "Potential freelance or side\u2011project experience that may not be listed on the resume",
-        "Exact graduation timeline and availability for full\u2011time employment",
-        "Familiarity with cloud platforms (AWS) or willingness to acquire those skills"
-      ],
-      "overall_jd_alignment_summary": "The candidate shows moderate overlap with the JD in core programming language (Python) and basic API development, but lacks the required backend framework (FastAPI), relational database experience (PostgreSQL), and containerization (Docker). Their experience is primarily an internship with a JavaScript\u2011centric stack and UI/UX focus, and the degree is still in progress. Consequently, the overall alignment is low, and the candidate would require substantial upskilling and verification of hidden Python backend experience before being considered a viable fit for the Python Backend Developer role."
-    }
-  },
-  {
-    "candidate_id": "CAND004",
     "candidate_name": "THIRUKARTHIKEYAN G",
     "resume_filename": "Thirukarthikeyan resume.pdf",
     "candidate_info": {
@@ -754,7 +267,7 @@
         {
           "degree": "B.Tech",
           "specialization": "Information Technology",
-          "institution": "Velammal Engineering College, Chennai (Anna University, Chennai)",
+          "institution": "Velammal Engineering College, Chennai",
           "graduation_year": null
         },
         {
@@ -782,7 +295,7 @@
       "projects": [
         {
           "title": "BREAST CANCER PREDICTION",
-          "description": "It involves using data and algorithms to identify the likelihood of a person developing breast cancer.",
+          "description": "it involves using data and algorithms to identify the likelihood of a person developing breast cancer.",
           "technologies": [],
           "role": null
         },
@@ -795,9 +308,7 @@
         {
           "title": "CAR PARKING SYSTEM",
           "description": "Based on IOT.",
-          "technologies": [
-            "IoT"
-          ],
+          "technologies": [],
           "role": null
         }
       ],
@@ -825,12 +336,11 @@
       "testing_tools": [],
       "other_technical_skills": [
         "Android Studio",
-        "Android app development",
-        "Arduino",
         "IoT",
         "Embedded Systems",
-        "Sensor Interfacing",
-        "Microcontroller Programming"
+        "Arduino",
+        "Microcontroller programming",
+        "Sensor interfacing"
       ]
     },
     "experience": {
@@ -846,7 +356,8 @@
       "role_exposure": [
         "Android app development (Kotlin, Android Studio)",
         "IoT with Embedded Systems (Arduino, sensor interfacing)",
-        "Python programming for Data Science and Machine Learning"
+        "Data Science / Machine Learning (Python)",
+        "Programming in C and Java"
       ]
     },
     "job_match": {
@@ -869,59 +380,58 @@
         "Java",
         "Kotlin",
         "C",
-        "Android Studio",
-        "Android app development",
-        "Arduino",
-        "IoT",
-        "Embedded Systems",
-        "Sensor Interfacing",
-        "Microcontroller Programming",
         "Data Science",
         "Machine Learning",
-        "Data Visualization"
+        "Data Visualization",
+        "Android Studio",
+        "IoT",
+        "Embedded Systems",
+        "Arduino",
+        "Microcontroller programming",
+        "Sensor interfacing"
       ],
-      "relevant_experience_match": "The candidate has 0 years of professional experience and only internship exposure in Android app development and IoT. The role requires 1\u20133 years of backend development experience with Python and REST APIs, which the candidate does not possess.",
-      "project_alignment": "The listed projects (Breast Cancer Prediction, Phone Number Tracking, Car Parking System) focus on data science and IoT concepts and do not demonstrate experience in building Python backend services, REST APIs, or working with relational databases, resulting in low alignment with the job responsibilities.",
-      "qualification_alignment": "The candidate holds a B.Tech in Information Technology, satisfying the bachelor's degree requirement in Computer Science/IT or a related field.",
-      "technology_alignment": "While the candidate knows Python, the overall technology stack is centered on mobile (Android/Kotlin) and IoT development, lacking exposure to backend frameworks (FastAPI), API design, relational databases, version control (Git), and containerization (Docker) that are core to the role."
+      "relevant_experience_match": "The candidate has 0 years of professional backend development experience, with internship exposure limited to Android app development and IoT. This does not satisfy the JD requirement of 1\u20133 years of backend development and REST API experience.",
+      "project_alignment": "The listed projects (Breast Cancer Prediction, Tracking Phone Number, Car Parking System) showcase data\u2011science and IoT capabilities but do not demonstrate experience in building or maintaining Python\u2011based backend services, REST APIs, or database integration required by the role.",
+      "qualification_alignment": "The candidate holds a B.Tech in Information Technology, which meets the JD\u2019s requirement for a bachelor's degree in Computer Science, IT, Software Engineering, or a related field.",
+      "technology_alignment": "While the candidate knows Python, they lack exposure to the specific backend stack outlined in the JD (FastAPI, REST API design, PostgreSQL, Git, Docker). Their broader skill set includes Java/Kotlin for Android, data\u2011science tools, and embedded/IOT technologies, indicating some software development foundation but limited alignment with the required backend technologies."
     },
     "scoring": {
-      "overall_score": 16.7,
+      "overall_score": 18.5,
       "category_scores": [
         {
           "category_name": "Skills Match",
           "score": 16.7,
           "weight_percent": 40.0,
           "weighted_score": 6.68,
-          "justification": "The JD lists six required technical skills (Python, FastAPI, REST API development, PostgreSQL, Git, Docker). The candidate demonstrates only Python. No preferred skills are present. Matched skills = 1 / 6 = 16.7%."
+          "justification": "The candidate demonstrates knowledge of Python, which satisfies one of the six required skills. No evidence is present for FastAPI, REST API development, PostgreSQL, Git, or Docker, nor for any of the preferred skills. Therefore, the matched skill ratio is 1/6 \u2248 16.7%."
         },
         {
           "category_name": "Relevant Experience",
           "score": 0.0,
           "weight_percent": 25.0,
           "weighted_score": 0.0,
-          "justification": "The role requires 1\u20133 years of backend development experience with Python and REST APIs. The candidate reports 0 years of professional experience and internship work limited to Android app development and IoT, which does not satisfy the backend experience requirement."
+          "justification": "The JD requires 1\u20133 years of backend development experience with Python and relational databases. The candidate reports 0 years of professional backend experience; internship work is limited to Android app development and IoT, which does not meet the backend or REST\u2011API experience criteria."
         },
         {
           "category_name": "Projects",
-          "score": 0.0,
+          "score": 5.0,
           "weight_percent": 15.0,
-          "weighted_score": 0.0,
-          "justification": "Projects (Breast Cancer Prediction, Phone Number Tracking, Car Parking System) focus on data\u2011science and IoT concepts. None demonstrate design or implementation of Python backend services, REST APIs, or relational database work required by the JD."
+          "weighted_score": 0.75,
+          "justification": "Projects listed (Breast Cancer Prediction, Phone Number Tracking, Car Parking System) showcase data\u2011science and IoT capabilities but do not involve building Python backend services, REST APIs, or database integration required for the role."
         },
         {
           "category_name": "Education",
           "score": 100.0,
           "weight_percent": 10.0,
           "weighted_score": 10.0,
-          "justification": "The candidate holds a B.Tech in Information Technology, satisfying the JD\u2019s requirement for a bachelor\u2019s degree in Computer Science, IT, Software Engineering, or a related field."
+          "justification": "The candidate holds a B.Tech in Information Technology, which satisfies the JD\u2019s requirement for a bachelor's degree in Computer Science, IT, Software Engineering, or a related field."
         },
         {
           "category_name": "Additional Requirements",
-          "score": 0.0,
+          "score": 10.0,
           "weight_percent": 10.0,
-          "weighted_score": 0.0,
-          "justification": "The resume provides no evidence of the soft\u2011skill requirements (problem\u2011solving, teamwork, communication) nor any certifications or exposure to the preferred technologies (LangChain, RAG, FAISS, AWS, Redis)."
+          "weighted_score": 1.0,
+          "justification": "The resume does not provide explicit evidence of problem\u2011solving, teamwork, or communication skills, nor any certifications or exposure to the preferred technologies (LangChain, RAG, FAISS, AWS, Redis). A minimal score is given for the presence of internship experience, which may imply some teamwork."
         }
       ],
       "missing_requirements": [
@@ -931,29 +441,32 @@
         "Git",
         "Docker",
         "1\u20133 years backend development experience",
+        "Experience developing REST APIs using Python",
+        "Experience with relational databases",
         "LangChain",
         "RAG",
         "FAISS",
         "AWS",
         "Redis",
         "Demonstrated problem\u2011solving skills",
-        "Team collaboration experience",
+        "Team collaboration evidence",
         "Communication skills"
       ],
-      "scoring_breakdown_summary": "The overall score is the weighted sum of five categories. Skills match contributed 6.68 points, education contributed 10 points, while relevant experience, projects, and additional requirements contributed zero. The final rounded total is 16.7 out of 100."
+      "scoring_breakdown_summary": "The overall score of 18.5 results from weighted contributions: Skills Match (6.7), Relevant Experience (0), Projects (0.8), Education (10), and Additional Requirements (1). The candidate meets the education criterion but lacks the required backend skills, experience, and project evidence, leading to a low overall match."
     },
     "recommendation": {
       "recommendation_category": "Low Match",
       "key_strengths": [
         "Bachelor's degree in Information Technology (meets education requirement)",
-        "Proficient in Python (core language required)",
-        "Strong background in mobile development (Android/Kotlin) and IoT projects",
-        "Experience with data\u2011science tools (e.g., Breast Cancer Prediction project)"
+        "Proficiency in Python programming",
+        "Experience with Java, Kotlin, and C, indicating a solid programming foundation",
+        "Internship exposure to Android app development and IoT projects",
+        "Data\u2011science and machine\u2011learning project experience (Breast Cancer Prediction, Phone Number Tracking, Car Parking System)"
       ],
       "relevant_skills": [
         "Python"
       ],
-      "relevant_experience_summary": "The candidate has no professional backend development experience. Their only work exposure is an internship focused on Android app development and IoT hardware integration, which does not cover Python backend services, REST API design, or relational database work required by the role.",
+      "relevant_experience_summary": "The candidate has 0 years of professional backend development experience. Internship work focused on Android application development and IoT hardware integration, with no demonstrated experience in Python\u2011based backend services, REST API design, or relational database interaction. Consequently, the candidate does not satisfy the JD\u2019s requirement of 1\u20133 years of backend development and REST\u2011API experience.",
       "missing_requirements": [
         "FastAPI",
         "REST API development",
@@ -961,23 +474,25 @@
         "Git",
         "Docker",
         "1\u20133 years of backend development experience",
-        "LangChain",
-        "RAG",
-        "FAISS",
-        "AWS",
-        "Redis",
+        "Experience developing REST APIs using Python",
+        "Experience with relational databases",
+        "LangChain (preferred)",
+        "RAG (preferred)",
+        "FAISS (preferred)",
+        "AWS (preferred)",
+        "Redis (preferred)",
         "Demonstrated problem\u2011solving skills",
-        "Team collaboration experience",
+        "Evidence of team collaboration",
         "Communication skills"
       ],
       "areas_requiring_verification": [
-        "Any undocumented Python backend or API projects (e.g., personal or academic work)",
-        "Depth of Python usage beyond basic scripting",
-        "Exposure to version control (Git) and containerization (Docker) in any context",
-        "Soft\u2011skill evidence: teamwork, communication, problem\u2011solving in academic or internship settings",
-        "Potential transferable skills from mobile/IoT development to backend engineering"
+        "Any undocumented professional or freelance experience with Python backend development or REST APIs",
+        "Exposure to version control (Git) and containerization (Docker) not listed on the resume",
+        "Depth of involvement in team projects during the internship (role, collaboration, communication)",
+        "Willingness and ability to quickly acquire the missing backend stack (FastAPI, PostgreSQL, Docker, etc.)",
+        "Evidence of problem\u2011solving ability beyond academic projects"
       ],
-      "overall_jd_alignment_summary": "The candidate meets the educational requirement and knows Python, but lacks all other mandatory technical skills, the required 1\u20133 years of backend experience, and any demonstrable work with REST APIs, FastAPI, PostgreSQL, Git, or Docker. Consequently, the overall alignment with the Python Backend Developer role is very low, and the candidate is not a suitable match for this position at this time."
+      "overall_jd_alignment_summary": "While the candidate meets the educational requirement and possesses basic Python knowledge, there is a substantial gap in the core technical skills and professional experience demanded by the Python Backend Developer role. The lack of FastAPI, REST API, PostgreSQL, Git, Docker, and relevant backend work experience results in a low overall alignment with the job description. The candidate may be better suited for roles focused on Android, IoT, or data\u2011science rather than a dedicated Python backend position."
     }
   }
 ]

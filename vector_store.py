@@ -1,6 +1,6 @@
 import os
 from typing import List, Dict, Any, Tuple
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
 from parsers.pydantic_models import CandidateProfile

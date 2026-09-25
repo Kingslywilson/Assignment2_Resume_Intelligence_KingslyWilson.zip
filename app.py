@@ -28,7 +28,7 @@ from chains.jd_analysis import analyze_job_description
 from chains.job_match import match_candidate_to_jd
 from chains.scoring import calculate_candidate_score
 from chains.recommendation import generate_recommendation
-from vector_store import build_and_save_vector_store
+from vector_store import build_and_save_vector_store,load_vector_store
 from semantic_search import search_candidates, get_candidate_retriever
 
 
@@ -428,40 +428,57 @@ def interactive_search_mode():
 
 
 def main():
+    print("==================================================")
+    print(" Intelligent Resume Intelligence Platform ")
+    print("==================================================")
 
-    print(
-        "=================================================="
-    )
+    print("\nChoose an option:")
+    print("1. Process resumes and build/update FAISS")
+    print("2. Load existing FAISS and perform semantic search")
+    print("3. Exit")
 
-    print(
-        " Intelligent Resume Intelligence Platform "
-    )
+    choice = input("\nEnter your choice > ").strip()
 
-    print(
-        "=================================================="
-    )
+    if choice == "1":
+        profiles = run_full_pipeline()
 
-    profiles = run_full_pipeline()
-    if profiles:
+        if profiles:
+            print("\nPipeline completed successfully.")
+
+            print(
+                "\nDo you want to perform natural "
+                "language candidate search? (y/n)"
+            )
+
+            search_choice = input("> ").strip().lower()
+
+            if search_choice in ["y", "yes"]:
+                interactive_search_mode()
+
+    elif choice == "2":
+        vector_store = load_vector_store()
+
+        if vector_store is None:
+            print(
+                "\nNo existing FAISS vector store found."
+            )
+            print(
+                "Please choose option 1 first to "
+                "process resumes and build the index."
+            )
+            return
 
         print(
-            "\nDo you want to perform natural "
-            "language candidate search? (y/n)"
+            "\nExisting FAISS vector store loaded successfully."
         )
 
-        choice = input(
-            "> "
-        ).strip().lower()
+        interactive_search_mode()
 
-        if choice in ["y", "yes"]:
-            interactive_search_mode()
+    elif choice == "3":
+        print("\nExiting.")
+
     else:
-
-        print(
-            "\nPipeline run finished. "
-            "Add PDF resumes to data/resumes/ "
-            "to process candidates."
-        )
+        print("\nInvalid choice. Please enter 1, 2, or 3.")
 
 if __name__ == "__main__":
     main()

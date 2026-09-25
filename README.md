@@ -1,72 +1,68 @@
 # Intelligent Resume Intelligence Platform
 
-> **Assignment Title:** Intelligent Resume Intelligence Platform  
-> **LLM Provider:** Groq (`ChatGroq`)  
-> **Vector Store:** FAISS (`faiss-cpu`)  
-> **Embeddings:** HuggingFace Embeddings (`sentence-transformers/all-MiniLM-L6-v2`)  
+## Overview
 
----
+A Python and LangChain based Resume Intelligence Platform that processes multiple PDF resumes, extracts candidate information and skills, analyzes experience, compares candidates with a Job Description, generates explainable scores and recruiter recommendations, and supports semantic candidate search.
 
-## 📌 Project Overview
+## Features
 
-The **Intelligent Resume Intelligence Platform** is an enterprise-grade backend application that automates candidate resume parsing, preprocessing, evaluation, scoring, and semantic retrieval against Job Descriptions (JDs).
+* Multiple PDF resume processing
+* Resume text extraction using PyPDF
+* Resume text preprocessing
+* Candidate information extraction
+* Technical skill extraction and categorization
+* Experience classification
+* Job Description analysis
+* Candidate-to-JD matching
+* Explainable candidate scoring (0–100)
+* Recruiter recommendation
+* Structured Pydantic output
+* JSON output generation
+* Hugging Face embeddings
+* FAISS vector database
+* LangChain semantic candidate search
+* Graceful handling of invalid resumes
+* Hallucination prevention through document-grounded prompts
 
-Built strictly using modern **LangChain**, **Pydantic**, **Groq**, and **FAISS**, the platform provides transparent, explainable 0–100 job-matching scores, recruiter-facing analytical recommendations, and natural language candidate search without fabricating data or introducing demographic bias.
+## Technologies
 
----
+* Python
+* LangChain
+* LangChain Core
+* LangChain Groq
+* LangChain Hugging Face
+* Pydantic
+* PyPDF
+* FAISS
+* Sentence Transformers
+* Groq LLM
+* Hugging Face Embeddings
 
-## 🛠️ Technology Stack & Versions
-
-- **Python Version**: Python 3.9+
-- **LangChain Version**: `langchain>=0.1.0`, `langchain-community`, `langchain-core`, `langchain-groq`
-- **Data Validation & Schemas**: `pydantic>=2.0`
-- **LLM Provider**: Groq API (`llama-3.3-70b-versatile` or configured model)
-- **Embeddings Provider**: `sentence-transformers/all-MiniLM-L6-v2` via `HuggingFaceEmbeddings`
-- **Vector Database**: FAISS (`faiss-cpu`)
-- **PDF Loader**: `PyPDFLoader` (`pypdf`)
-- **Environment Management**: `python-dotenv`
-
----
-
-## 🧩 LangChain Concepts Used
-
-1. **Document Loaders**: `PyPDFLoader` for multi-page resume loading and page metadata preservation.
-2. **Prompt Engineering & Templates**: `PromptTemplate` with external prompt text files for 7 workflow stages.
-3. **Structured Output Parsers**:
-   - `PydanticOutputParser` for strict schema validation.
-   - `JsonOutputParser` for flexible dictionary-based output extraction.
-4. **Embeddings**: `HuggingFaceEmbeddings` for generating localized candidate vector representations.
-5. **Vector Database & Storage**: `FAISS` vector store creation, local index persistence, and loading.
-6. **Retrievers & Semantic Search**: `as_retriever` interface with distance threshold filtering.
-
----
-
-## 📁 Required Project Structure
+## Project Structure
 
 ```text
 Assignment2_Resume_Intelligence_YourName/
 │
-├── app.py                         # Main entry point & CLI controller
-├── resume_loader.py               # PDF resume loading & error handling
-├── preprocess.py                  # Text cleaning & artifact removal
+├── app.py
+├── resume_loader.py
+├── preprocess.py
+├── vector_store.py
+├── semantic_search.py
 │
-├── chains/                        # LangChain workflow chains
-│   ├── candidate_extraction.py   # Candidate contact & background info
-│   ├── skills_extraction.py      # Technical skills categorization
-│   ├── experience_classifier.py  # Experience level & duration classification
-│   ├── jd_analysis.py            # Job Description requirement extraction
-│   ├── job_match.py              # Candidate vs JD comparison
-│   ├── scoring.py                # Explainable 0-100 scoring engine
-│   └── recommendation.py         # Recruiter recommendation generator
+├── chains/
+│   ├── candidate_extraction.py
+│   ├── skills_extraction.py
+│   ├── experience_classifier.py
+│   ├── jd_analysis.py
+│   ├── job_match.py
+│   ├── scoring.py
+│   └── recommendation.py
 │
-├── parsers/                       # Output parsing & schema definitions
-│   ├── pydantic_models.py        # Strict Pydantic data schemas
-│   └── output_parsers.py         # Pydantic & JSON output parser implementations
+├── parsers/
+│   ├── pydantic_models.py
+│   └── output_parsers.py
 │
-├── vector_store.py                # Embedding creation & FAISS management
-├── semantic_search.py             # Retriever interface & semantic search
-│
-├── prompts/                       # External prompt templates
+├── prompts/
 │   ├── candidate_extraction_prompt.txt
 │   ├── skills_extraction_prompt.txt
 │   ├── experience_prompt.txt
@@ -75,105 +71,293 @@ Assignment2_Resume_Intelligence_YourName/
 │   ├── scoring_prompt.txt
 │   └── recommendation_prompt.txt
 │
-├── data/                          # Input data directory
-│   ├── resumes/                  # Place candidate PDF resumes here
-│   └── job_description/          # Place Job Description (.txt / .pdf) here
+├── data/
+│   ├── resumes/
+│   └── job_description/
 │
-├── outputs/                       # Output directory
-│   └── candidate_profiles.json   # Exported candidate JSON profiles
+├── outputs/
+│   └── candidate_profiles.json
 │
-├── resume_intelligence_strategy.md # Complete strategy document
-├── test_log.md                    # Evaluation test framework log
-├── README.md                      # Application documentation
-├── requirements.txt               # Dependencies file
-└── .env.example                   # Environment variable template
+├── resume_intelligence_strategy.md
+├── test_log.md
+├── requirements.txt
+└── .env.example
 ```
 
----
+## Installation
 
-## 🚀 Installation & Setup
+Create and activate a Python virtual environment, then install the dependencies:
 
-### 1. Prerequisites
-Ensure Python 3.9+ is installed.
-
-### 2. Install Dependencies
-```bash
+```text
 pip install -r requirements.txt
 ```
 
-### 3. Environment Configuration
-Copy `.env.example` to `.env` and set your Groq API key:
-```bash
-cp .env.example .env
-```
-Inside `.env`:
-```env
-GROQ_API_KEY=your_actual_groq_api_key_here
-GROQ_MODEL_NAME=llama-3.3-70b-versatile
+## Environment Variables
+
+Create a `.env` file locally:
+
+```text
+GROQ_API_KEY=your_groq_api_key
 ```
 
----
+Do not upload the `.env` file or expose the API key.
 
-## 📥 Adding Resumes and Job Description
+The project also includes `.env.example` as a template.
 
-1. **Add Resumes**: Place candidate PDF resumes inside `data/resumes/`
-   Example: `data/resumes/John_Doe_Resume.pdf`, `data/resumes/Jane_Smith.pdf`
-2. **Add Job Description**: Place the Job Description inside `data/job_description/`
-   Supported formats: `.txt` or `.pdf` (e.g., `data/job_description/jd_backend_engineer.txt`)
+## Adding Resumes
 
----
+Place PDF resumes inside:
 
-## 💻 How to Run the Application
+```text
+data/resumes/
+```
 
-Run `app.py` from the root directory:
+Multiple resumes can be added.
 
-```bash
+The system assigns candidate IDs such as:
+
+```text
+CAND001
+CAND002
+CAND003
+```
+
+Invalid or unreadable resumes are handled without stopping the processing of valid resumes.
+
+## Adding a Job Description
+
+Place a `.txt` or `.pdf` Job Description inside:
+
+```text
+data/job_description/
+```
+
+The application analyzes the Job Description and extracts:
+
+* Required skills
+* Preferred skills
+* Required experience
+* Qualifications
+* Responsibilities
+* Additional requirements
+
+## Processing Pipeline
+
+The application follows a multi-stage workflow:
+
+```text
+PDF Resume
+    ↓
+Text Extraction
+    ↓
+Preprocessing
+    ↓
+Candidate Information
+    ↓
+Skills Extraction
+    ↓
+Experience Classification
+    ↓
+Job Description Analysis
+    ↓
+Candidate-to-JD Matching
+    ↓
+Explainable Scoring
+    ↓
+Recruiter Recommendation
+    ↓
+Structured Candidate Profile
+    ↓
+FAISS Vector Store
+    ↓
+Semantic Candidate Search
+```
+
+## Running the Application
+
+Run:
+
+```text
 python app.py
 ```
 
-### What happens when you run `app.py`:
-1. Scans and loads PDF resumes from `data/resumes/`.
-2. Preprocesses raw text (cleans whitespace, fixes line wraps, filters artifacts).
-3. Reads and analyzes the Job Description from `data/job_description/`.
-4. Executes multi-stage chain evaluation for each candidate.
-5. Saves structured results to `outputs/candidate_profiles.json`.
-6. Generates FAISS vector embeddings index in `outputs/faiss_index/`.
-7. Launches interactive semantic candidate search CLI.
+The application provides three options:
 
----
+```text
+1. Process resumes and build/update FAISS
+2. Load existing FAISS and perform semantic search
+3. Exit
+```
 
-## 📊 How Scoring Works
+### Option 1
 
-The Explainable Scoring Engine computes a transparent `0.0 to 100.0` score based on five weighted categories:
+Use this when:
 
-1. **Skills Match (40%)**: Matched skills vs JD required/preferred skills.
-2. **Relevant Experience (25%)**: Alignment of total/relevant experience with JD requirement.
-3. **Projects Alignment (15%)**: Project experience relevance to JD responsibilities.
-4. **Education (10%)**: Degree and field of study match.
-5. **Additional Requirements (10%)**: Certifications, cloud/DevOps, and domain exposure.
+* Adding new resumes
+* Changing resumes
+* Changing the Job Description
+* Rebuilding the FAISS index
 
-$$\text{Overall Score} = \sum (\text{Category Score} \times \text{Weight})$$
+This runs the complete LLM pipeline and creates:
 
----
+```text
+outputs/candidate_profiles.json
+```
 
-## 🔍 How Semantic Search Works
+It also builds the FAISS vector store.
 
-- Candidate professional information (skills, experience, projects, certifications) is converted into 384-dimensional vector embeddings using `sentence-transformers/all-MiniLM-L6-v2`.
-- Embeddings are indexed into a FAISS vector database.
-- Queries are executed using LangChain Retriever with similarity distance thresholding (`threshold = 1.45`).
-- If no candidate profile meets the similarity threshold, the search returns:
-  `"No sufficiently relevant candidate profiles were found for this search."`
+### Option 2
 
-### Example Search Queries:
-- `"Find candidates with LangChain + FastAPI experience."`
-- `"Find candidates with Python backend development and MySQL skills."`
-- `"Find candidates who have worked on RAG projects."`
-- `"Find candidates with Java, Spring Boot, and microservices experience."`
+Use this when the FAISS index already exists and you only want to perform semantic searches.
 
----
+Example queries:
 
-## ⚠️ Known Limitations
+```text
+developer
+```
 
-1. **Scanned PDF Text**: PyPDFLoader extracts text-based PDFs. Image-only scanned PDFs require OCR preprocessing before extraction.
-2. **API Rate Limits**: Large resume batches (50+ resumes) may hit Groq LLM rate limits if run concurrently; sequential processing with retry logic is implemented to mitigate this.
-3. **Local Embedding Speed**: The initial run downloads the lightweight HuggingFace MiniLM model (~90MB) once for offline embedding generation.
+```text
+Java developer with Spring Boot experience
+```
+
+```text
+Python backend developer
+```
+
+```text
+AI and machine learning candidate
+```
+
+```text
+candidate with React and Node.js experience
+```
+
+The search uses embeddings and FAISS semantic retrieval rather than exact keyword matching only.
+
+## Structured Output
+
+Pydantic models are used to validate candidate profiles and other structured results.
+
+The project also demonstrates structured JSON parsing through the configured output parsers.
+
+The final candidate information is stored in:
+
+```text
+outputs/candidate_profiles.json
+```
+
+## Explainable Scoring
+
+Candidates receive an overall score from:
+
+```text
+0–100
+```
+
+The score is based on job-relevant evidence from the resume and Job Description.
+
+The scoring includes areas such as:
+
+* Skills
+* Experience
+* Projects
+* Education
+* Additional requirements
+
+The system does not use unrelated personal characteristics for scoring.
+
+## Recruiter Recommendation
+
+The system generates a recruiter-support recommendation such as:
+
+* Strong Match
+* Potential Match
+* Needs Further Review
+* Low Match
+
+The recommendation includes relevant strengths, missing requirements, and areas that may require verification.
+
+The system is intended to assist recruiters and does not make the final hiring decision.
+
+## Semantic Search
+
+Professional information is converted into embeddings and stored in FAISS.
+
+Search considers information such as:
+
+* Skills
+* Experience
+* Projects
+* Technologies
+* Role history
+* Certifications
+* Relevant education
+
+Example:
+
+```text
+Search Query > Java developer with Spring Boot experience
+```
+
+The system returns semantically relevant candidate profiles.
+
+If no sufficiently relevant candidate is found, the application returns:
+
+```text
+No sufficiently relevant candidate profiles were found for this search.
+```
+
+## Hallucination Prevention
+
+The prompts instruct the LLM to:
+
+* Use only the supplied resume or Job Description information
+* Never invent missing information
+* Return `Not available` or `null` when information is missing
+* Avoid unsupported assumptions
+* Keep matching and scoring grounded in resume and JD evidence
+
+## Privacy and Responsible Evaluation
+
+Only job-relevant professional information is used for candidate evaluation.
+
+The system does not intentionally use or infer:
+
+* Gender
+* Religion
+* Caste
+* Ethnicity
+* Marital status
+* Disability
+* Photograph-based information
+* Other protected personal characteristics
+
+Use synthetic, sample, or authorized resumes for testing.
+
+## Testing
+
+Actual application tests and results are documented in:
+
+```text
+test_log.md
+```
+
+Testing includes resume processing, candidate extraction, Job Description analysis, matching, scoring, recommendation, invalid resume handling, and semantic search.
+
+## Known Limitations
+
+* LLM results depend on the configured Groq model and API limits.
+* PDF quality can affect text extraction.
+* Semantic search quality depends on the embedding model and indexed candidate information.
+* API credentials are required for LLM-based processing.
+* Recruiter recommendations are decision-support outputs and require human review.
+
+## Requirements
+
+Install all dependencies using:
+
+```text
+pip install -r requirements.txt
+```
+
+The exact package versions used for the project are documented in `requirements.txt`.
