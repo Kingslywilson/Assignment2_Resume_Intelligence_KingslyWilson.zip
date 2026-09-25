@@ -77,7 +77,7 @@ Assignment2_Resume_Intelligence_YourName/
 │   ├── resumes/
 │   └── job_description/
 │
-├── outputs/
+├── outputs/ # generate after running app.py
 │   ├── candidate_profiles.json
 │   └── faiss_index/
 │

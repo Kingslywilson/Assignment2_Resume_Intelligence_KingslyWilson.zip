@@ -239,19 +239,9 @@ def run_full_pipeline():
     jd_raw_text = load_job_description()
 
     if not jd_raw_text:
-        print(
-            "\nNo Job Description text available. "
-            "Using generic baseline JD analysis for evaluation."
-        )
-
-        jd_analysis = JobDescriptionAnalysis(
-            role_title="Software Development Engineer",
-            required_skills=[
-                "Python",
-                "Software Engineering",
-            ],
-            required_experience="1+ years",
-        )
+        print("\nNo Job Description found.")
+        print("Please add a .txt or .pdf Job Description to data/job_description/")
+        return []
 
     else:
         print(
