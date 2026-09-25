@@ -65,7 +65,7 @@
           "role": null
         }
       ],
-      "total_experience": "Oct 2023 - Dec 2024"
+      "total_experience": "Not available"
     },
     "skills": {
       "programming_languages": [
@@ -78,23 +78,24 @@
       "frameworks": [
         "Spring Boot",
         "React.js",
-        "Node.js"
+        "Node.js",
+        "Spring Data JPA"
       ],
       "databases": [
         "MongoDB",
         "MySQL"
       ],
       "cloud_technologies": [],
-      "ai_ml": [],
+      "ai_ml": [
+        "Machine Learning",
+        "AI"
+      ],
       "generative_ai": [
         "GitHub Copilot"
       ],
       "backend_technologies": [
         "REST APIs",
-        "Spring Boot",
-        "Node.js",
-        "JWT",
-        "Spring Data JPA"
+        "JWT"
       ],
       "frontend_technologies": [
         "React.js"
@@ -104,37 +105,37 @@
       ],
       "testing_tools": [],
       "other_technical_skills": [
-        "Git",
         "Blockchain",
-        "Smart Contracts"
+        "Smart Contracts",
+        "Git"
       ]
     },
     "experience": {
       "experience_category": "Internship experience",
-      "total_professional_experience": "0 years",
-      "relevant_experience": "Web Development Intern (Oct 2023 \u2013 Dec 2024) \u2013 approx. 14 months of full\u2011stack development, REST API design, debugging, testing and code reviews",
-      "internship_duration": "14 months",
+      "total_professional_experience": "0 years (no full\u2011time professional roles reported)",
+      "relevant_experience": "Web Development Intern at ennoViQ Educator & DLQ Technologies (Oct\u202f2023\u202f\u2013\u202fDec\u202f2024), approx. 14\u202fmonths of full\u2011stack development, REST API creation, debugging, testing and code reviews.",
+      "internship_duration": "14 months (Oct\u202f2023\u202f\u2013\u202fDec\u202f2024)",
       "relevant_projects": [
         "Blockchain-Based Smart City Complaint System",
         "URL Shortener with Analytics"
       ],
       "role_exposure": [
-        "Full\u2011stack web development (React.js, Node.js, Spring Boot)",
-        "Backend services and REST API development",
-        "Frontend UI implementation and responsive design",
-        "Database design and management (MongoDB, MySQL)",
-        "Blockchain smart contract integration",
+        "Full\u2011stack web development",
+        "Backend development (REST APIs, Spring Boot, Node.js)",
+        "Frontend development (React.js)",
+        "Database management (MongoDB, MySQL)",
+        "Blockchain integration and smart contracts",
         "Docker containerization",
-        "JWT\u2011based authentication and security",
-        "Code reviews, debugging, and testing"
+        "JWT\u2011based authentication",
+        "Code versioning with Git"
       ]
     },
     "job_match": {
       "matched_skills": [
         "Python",
         "REST API development",
-        "Git",
-        "Docker"
+        "Docker",
+        "Git"
       ],
       "missing_skills": [
         "FastAPI",
@@ -152,105 +153,107 @@
         "SQL",
         "Spring Boot",
         "Node.js",
-        "JWT",
-        "Spring Data JPA",
-        "MySQL",
+        "React.js",
         "MongoDB",
+        "MySQL",
         "Blockchain",
-        "Smart Contracts"
+        "Smart Contracts",
+        "JWT",
+        "Machine Learning",
+        "AI",
+        "GitHub Copilot"
       ],
-      "relevant_experience_match": "The candidate has ~14 months (\u22481.2 years) of full\u2011stack internship experience, satisfying the JD's 1\u20133 year range in terms of duration. However, the experience is primarily with Java/Spring Boot and Node.js, not Python, so backend experience with the required language is limited.",
-      "project_alignment": "Both projects involve full\u2011stack development, REST API design, database integration (MySQL, MongoDB), JWT\u2011based authentication, and Docker containerization, aligning well with many JD responsibilities. They do not demonstrate Python or PostgreSQL usage, which are core to the role.",
-      "qualification_alignment": "The candidate holds a B.Tech in Information Technology, which meets the JD\u2019s requirement for a bachelor's degree in a related field.",
-      "technology_alignment": "The candidate\u2019s skill set shows strong competence in general backend and DevOps technologies (Java, Spring Boot, Node.js, REST APIs, MySQL, MongoDB, Docker, Git). The JD\u2019s specific stack (Python, FastAPI, PostgreSQL) is only partially covered (Python, Docker, Git), indicating moderate overall alignment."
+      "relevant_experience_match": "The candidate has ~14 months of internship experience in full\u2011stack web development, including REST API creation and Docker containerization, but no professional experience (0 years) and no demonstrated Python backend development. Consequently, the experience does not satisfy the JD's 1\u20133 year Python backend requirement.",
+      "project_alignment": "Projects demonstrate full\u2011stack development, REST APIs, JWT authentication, Dockerization, and use of a relational database (MySQL). However, they are built with Java/Spring Boot and Node.js, not Python, and do not involve PostgreSQL or FastAPI, so alignment with the JD responsibilities is partial.",
+      "qualification_alignment": "The candidate holds a B.Tech in Information Technology, which meets the JD's requirement for a bachelor's degree in Computer Science, IT, Software Engineering, or a related field.",
+      "technology_alignment": "There is moderate overlap: both the candidate and JD use Docker, Git, REST APIs, and relational databases (MySQL vs. PostgreSQL). Critical gaps exist in the primary backend language (Python vs. Java) and framework (FastAPI vs. Spring Boot/Node.js). Overall, the candidate's stack aligns partially but lacks key Python\u2011centric technologies."
     },
     "scoring": {
-      "overall_score": 63.9,
+      "overall_score": 50.7,
       "category_scores": [
         {
           "category_name": "Skills Match",
           "score": 66.7,
           "weight_percent": 40.0,
           "weighted_score": 26.68,
-          "justification": "The candidate demonstrates proficiency in four of the six required skills (Python, REST API development, Git, Docker). FastAPI and PostgreSQL are absent, and none of the five preferred skills (LangChain, RAG, FAISS, AWS, Redis) are present. Score = 4/6 = 66.7."
+          "justification": "The candidate demonstrates proficiency in four of the six required skills: Python, REST API development, Git, and Docker. They lack experience with FastAPI and PostgreSQL, which are core to the role. No preferred skills (LangChain, RAG, FAISS, AWS, Redis) are present."
         },
         {
           "category_name": "Relevant Experience",
-          "score": 60.0,
+          "score": 20.0,
           "weight_percent": 25.0,
-          "weighted_score": 15.0,
-          "justification": "The resume shows ~14 months (\u22481.2 years) of full\u2011stack internship experience, satisfying the JD's 1\u20133 year range in terms of duration. However, the bulk of the work is in Java/Spring Boot and Node.js, with limited Python exposure, which reduces relevance for a Python\u2011focused backend role."
+          "weighted_score": 5.0,
+          "justification": "The candidate has approximately 14 months of internship experience (\u22481.2 years) in full\u2011stack development, meeting the minimum duration but not the required 1\u20133 years of professional Python backend work. Their experience is centered on Java/Spring Boot and Node.js, with no demonstrated Python backend development."
         },
         {
           "category_name": "Projects",
-          "score": 55.0,
+          "score": 40.0,
           "weight_percent": 15.0,
-          "weighted_score": 8.25,
-          "justification": "Both projects involve full\u2011stack development, REST API design, Docker containerization, and database work (MySQL, MongoDB). They align with many responsibilities (API development, containerization) but lack Python implementation and PostgreSQL usage, which are core to the role."
+          "weighted_score": 6.0,
+          "justification": "Both projects involve REST API creation, Docker containerization, and relational databases (MySQL). However, they are implemented with Java/Spring Boot and Node.js, not Python, and use MySQL instead of PostgreSQL. The blockchain project adds unrelated technology. Hence, partial alignment with the role's responsibilities."
         },
         {
           "category_name": "Education",
           "score": 100.0,
           "weight_percent": 10.0,
           "weighted_score": 10.0,
-          "justification": "The candidate holds a B.Tech in Information Technology, meeting the JD\u2019s requirement for a bachelor's degree in a related field."
+          "justification": "The candidate holds a B.Tech in Information Technology, satisfying the JD's requirement for a bachelor's degree in Computer Science, IT, Software Engineering, or a related field."
         },
         {
           "category_name": "Additional Requirements",
-          "score": 40.0,
+          "score": 30.0,
           "weight_percent": 10.0,
-          "weighted_score": 4.0,
-          "justification": "Certifications (Google AI, C & C++ Programming) are not directly related to the required stack. Preferred technologies (LangChain, RAG, FAISS, AWS, Redis) are missing, and the candidate\u2019s location is unspecified, whereas the JD requires being based in Chennai, India."
+          "weighted_score": 3.0,
+          "justification": "The candidate possesses certifications in Google AI and C/C++ programming, which demonstrate technical initiative but do not align with the preferred stack (LangChain, RAG, FAISS, AWS, Redis). No evidence of the soft\u2011skill criteria is provided in the resume."
         }
       ],
       "missing_requirements": [
         "FastAPI",
         "PostgreSQL",
-        "Python\u2011centric backend experience",
+        "Professional Python backend development experience",
         "LangChain",
         "RAG",
         "FAISS",
         "AWS",
-        "Redis",
-        "Based in Chennai, India (location not provided)"
+        "Redis"
       ],
-      "scoring_breakdown_summary": "The overall score of 63.9 is derived by weighting five categories: Skills Match (40%), Relevant Experience (25%), Projects (15%), Education (10%), and Additional Requirements (10%). The candidate meets many general backend and DevOps criteria but lacks several core Python\u2011specific skills, the required database technology, preferred AI/ML stack, and location, resulting in moderate overall alignment."
+      "scoring_breakdown_summary": "The overall score of 50.7 results from weighted contributions across five categories. Strong points are education (full credit) and partial skill overlap (66.7%). Significant gaps exist in Python\u2011centric backend experience, FastAPI, PostgreSQL, and preferred technologies, leading to low scores in relevant experience, projects, and additional requirements. The weighted sum of the category scores yields the final match score."
     },
     "recommendation": {
       "recommendation_category": "Needs Further Review",
       "key_strengths": [
         "Bachelor's degree in Information Technology (meets education requirement)",
-        "Solid foundation in backend development concepts (REST APIs, authentication, containerization)",
-        "Proficient with Docker and Git for CI/CD and version control",
-        "Full\u2011stack internship experience (~14 months) demonstrating ability to deliver production\u2011grade features",
-        "Broad programming language exposure (Python, Java, JavaScript, C++)"
+        "Solid foundation in Docker containerization and Git version control",
+        "Hands\u2011on experience building REST APIs and JWT authentication during internship",
+        "Multi\u2011language programming background (Java, JavaScript, C++, SQL)",
+        "Demonstrated ability to work on full\u2011stack projects and deliver functional prototypes"
       ],
       "relevant_skills": [
         "Python",
         "REST API development",
         "Docker",
-        "Git"
+        "Git",
+        "Relational databases (MySQL)"
       ],
-      "relevant_experience_summary": "The candidate completed a 14\u2011month full\u2011stack internship where they built and maintained web applications using Java/Spring Boot and Node.js, designed RESTful APIs, implemented JWT\u2011based authentication, and containerized services with Docker. Python was used for scripting/utility tasks, but the primary backend work was not Python\u2011centric. Experience aligns with general backend responsibilities but lacks direct exposure to the Python\u2011FastAPI\u2011PostgreSQL stack specified in the JD.",
+      "relevant_experience_summary": "Approximately 14 months of internship experience in full\u2011stack web development, where the candidate designed and implemented RESTful services, containerized applications with Docker, and managed source code with Git. The work was primarily in Java/Spring Boot and Node.js, with no documented professional Python backend development.",
       "missing_requirements": [
         "FastAPI framework experience",
-        "PostgreSQL (relational database) experience",
-        "Deep Python\u2011centric backend development (beyond basic scripting)",
-        "Preferred AI/ML stack: LangChain, RAG, FAISS",
-        "Cloud infrastructure experience (AWS)",
-        "Redis caching knowledge",
-        "Confirmed residence in Chennai, India"
+        "PostgreSQL database experience",
+        "1\u20133 years of professional Python backend development",
+        "LangChain",
+        "RAG",
+        "FAISS",
+        "AWS",
+        "Redis"
       ],
       "areas_requiring_verification": [
-        "Depth of Python usage in the internship and any side projects (e.g., frameworks, libraries)",
-        "Familiarity with FastAPI or willingness to learn it quickly",
-        "Practical experience with PostgreSQL or comparable relational databases",
-        "Exposure to or interest in AI/ML tooling such as LangChain, RAG, FAISS",
-        "Experience with cloud platforms, particularly AWS, and any DevOps tooling beyond Docker",
-        "Willingness and ability to relocate to or work from Chennai, India",
-        "Communication and teamwork skills in a collaborative development environment"
+        "Depth of Python usage \u2013 any backend projects, scripts, or production\u2011grade code not listed on the resume",
+        "Exposure to PostgreSQL \u2013 academic projects, personal labs, or brief professional use",
+        "Ability and willingness to quickly adopt FastAPI and related Python ecosystem tools",
+        "Evidence of problem\u2011solving, teamwork, and communication skills (e.g., code review participation, collaborative tools)",
+        "Any professional experience beyond the internship (e.g., freelance, contract work) that involves Python backend work"
       ],
-      "overall_jd_alignment_summary": "The candidate demonstrates solid general backend and DevOps capabilities, supported by a relevant degree and internship experience. However, critical gaps exist in the core technology stack (FastAPI, PostgreSQL) and the preferred AI/ML and cloud tools, as well as an unverified location requirement. These deficiencies lower the overall alignment to a moderate level, warranting a focused interview to validate Python backend depth, adaptability to the required stack, and relocation feasibility before any further consideration."
+      "overall_jd_alignment_summary": "The candidate meets the educational requirement and shows competence in several core technologies (Python, REST APIs, Docker, Git). However, critical gaps exist in the required Python\u2011centric backend stack\u2014specifically FastAPI and PostgreSQL\u2014and the lack of professional Python backend experience. While the internship provides relevant development exposure, the primary language and frameworks used differ from the role's focus. Consequently, the candidate warrants further review to verify Python backend capabilities and assess readiness to bridge the identified gaps."
     }
   },
   {
@@ -283,10 +286,7 @@
         }
       ],
       "certifications": [],
-      "job_titles": [
-        "Android App Development Intern",
-        "IoT with Embedded Systems In-Plant Trainee"
-      ],
+      "job_titles": [],
       "companies": [
         "Arjun Vision",
         "DLK Career Development"
@@ -326,8 +326,8 @@
       "databases": [],
       "cloud_technologies": [],
       "ai_ml": [
-        "Data Science",
         "Machine Learning",
+        "Data Science",
         "Data Visualization"
       ],
       "generative_ai": [],
@@ -337,12 +337,11 @@
       "testing_tools": [],
       "other_technical_skills": [
         "Android Studio",
-        "Arduino",
         "IoT",
         "Embedded Systems",
-        "Microcontroller programming",
+        "Arduino",
         "Sensor interfacing",
-        "Android app development"
+        "Microcontroller programming"
       ]
     },
     "experience": {
@@ -357,10 +356,11 @@
       ],
       "role_exposure": [
         "Android app development (Kotlin, Android Studio)",
-        "IoT with Embedded Systems (Arduino, microcontroller programming, sensor interfacing)",
-        "Data Science and Machine Learning (Python)",
+        "IoT with Embedded Systems (Arduino, sensor interfacing)",
+        "Data Science",
+        "Machine Learning",
         "Data Visualization",
-        "Programming in C and Java"
+        "Programming in Python, C, Java"
       ]
     },
     "job_match": {
@@ -380,61 +380,61 @@
         "Redis"
       ],
       "additional_relevant_skills": [
+        "C",
         "Java",
         "Kotlin",
-        "C",
-        "Data Science",
         "Machine Learning",
+        "Data Science",
         "Data Visualization",
         "Android Studio",
         "IoT",
         "Embedded Systems",
         "Arduino",
-        "Microcontroller programming",
-        "Sensor interfacing"
+        "Sensor interfacing",
+        "Microcontroller programming"
       ],
-      "relevant_experience_match": "The candidate has 0 years of professional backend development experience. Their internship experience is focused on Android app development and IoT, with no demonstrated work on Python backend services, REST APIs, or relational databases, which falls short of the 1\u20133 years required.",
-      "project_alignment": "The listed projects (Breast Cancer Prediction, Tracking Phone Number, Car Parking System) primarily involve data science and IoT concepts. None directly demonstrate backend API development, database design, or containerization, resulting in minimal alignment with the core responsibilities of the Python Backend Developer role.",
-      "qualification_alignment": "The candidate is currently pursuing a B.Tech in Information Technology, which aligns with the required bachelor's degree in a related field. However, the degree is not yet completed, so the qualification is partially met.",
-      "technology_alignment": "While the candidate knows Python, they lack exposure to the specific backend technologies and practices outlined in the JD (FastAPI, REST, PostgreSQL, Git, Docker). Their skill set leans toward mobile development, embedded systems, and data science, indicating low overall technology stack alignment with the Python Backend Developer role."
+      "relevant_experience_match": "The candidate has no professional backend development experience (0 years) and only internship exposure. The job requires 1\u20133 years of backend development experience, so the candidate does not meet the experience requirement.",
+      "project_alignment": "The candidate's projects (Breast Cancer Prediction, Phone Number Tracking, Car Parking System) demonstrate Python programming, data science, and IoT skills but do not show work on REST API design, database integration, or containerization, which are core responsibilities of the role. Alignment with the JD is therefore minimal.",
+      "qualification_alignment": "The candidate is currently pursuing a B.Tech in Information Technology, which aligns with the required bachelor's degree in a related field. However, the degree is not yet completed, so the qualification is only partially satisfied at this time.",
+      "technology_alignment": "While the candidate possesses Python programming ability, they lack exposure to the specific backend technologies and practices listed in the JD (FastAPI, REST APIs, PostgreSQL, Git, Docker, etc.). Overall technology stack alignment is low, with only a single required skill matched."
     },
     "scoring": {
-      "overall_score": 13.7,
+      "overall_score": 14.7,
       "category_scores": [
         {
           "category_name": "Skills Match",
           "score": 16.7,
           "weight_percent": 40.0,
           "weighted_score": 6.68,
-          "justification": "The candidate demonstrates knowledge of Python, which satisfies one of the six required skills. No evidence is found for FastAPI, REST API development, PostgreSQL, Git, or Docker, nor for any of the preferred technologies. Therefore, the matched skill ratio is 1/6 \u2248 16.7%."
+          "justification": "The candidate demonstrates proficiency in Python, which satisfies one of the six required skills. No evidence is provided for FastAPI, REST API development, PostgreSQL, Git, or Docker, nor for any of the preferred skills. Therefore, only 1/6 (\u224816.7%) of the required skill set is matched."
         },
         {
           "category_name": "Relevant Experience",
           "score": 0.0,
           "weight_percent": 25.0,
           "weighted_score": 0.0,
-          "justification": "The JD requires 1\u20133 years of backend development experience with Python and relational databases. The candidate has 0 years of professional experience and internship work focused on Android app development and IoT, with no backend or database exposure."
+          "justification": "The job requires 1\u20133 years of professional backend development experience. The candidate reports 0 years of professional experience and only internship exposure, which does not satisfy the experience requirement."
         },
         {
           "category_name": "Projects",
-          "score": 0.0,
+          "score": 20.0,
           "weight_percent": 15.0,
-          "weighted_score": 0.0,
-          "justification": "Project descriptions (Breast Cancer Prediction, Tracking Phone Number, Car Parking System) relate to data\u2011science or IoT domains and do not show design or implementation of REST APIs, database schemas, or containerized backend services required by the role."
+          "weighted_score": 3.0,
+          "justification": "Project work (Breast Cancer Prediction, Phone Number Tracking, Car Parking System) shows Python programming, data\u2011science, and IoT skills but lacks any demonstration of REST API design, database integration, or containerization\u2014core responsibilities of the role. Minimal alignment yields a low score."
         },
         {
           "category_name": "Education",
           "score": 50.0,
           "weight_percent": 10.0,
           "weighted_score": 5.0,
-          "justification": "The candidate is pursuing a B.Tech in Information Technology, which aligns with the required bachelor's degree in a related field. However, the degree is not yet completed, so only partial credit is awarded."
+          "justification": "The candidate is pursuing a B.Tech in Information Technology, which aligns with the required bachelor's degree in a related field. Because the degree is not yet completed, only partial credit is awarded."
         },
         {
           "category_name": "Additional Requirements",
-          "score": 20.0,
+          "score": 0.0,
           "weight_percent": 10.0,
-          "weighted_score": 2.0,
-          "justification": "The candidate lacks several non\u2011technical requirements: they are not based in Chennai, have no demonstrated Git or Docker usage, and no certifications or proven problem\u2011solving/teamwork evidence. Only generic soft\u2011skill indicators are present, resulting in low alignment."
+          "weighted_score": 0.0,
+          "justification": "No evidence is provided for problem\u2011solving, teamwork, communication skills, certifications, or exposure to the preferred technologies (LangChain, RAG, FAISS, AWS, Redis). Consequently, the candidate receives no points in this category."
         }
       ],
       "missing_requirements": [
@@ -443,47 +443,50 @@
         "PostgreSQL",
         "Git",
         "Docker",
-        "1\u20133 years backend development experience",
-        "Location in Chennai",
-        "Completed bachelor's degree",
-        "Experience with relational databases",
-        "Experience with containerization"
+        "1\u20133 years of backend development experience",
+        "Professional backend development experience",
+        "Completed Bachelor's degree",
+        "Experience with REST API design",
+        "Experience with database integration",
+        "Experience with containerization (Docker)",
+        "Preferred technologies: LangChain, RAG, FAISS, AWS, Redis"
       ],
-      "scoring_breakdown_summary": "The overall score of 13.7 reflects a very limited match to the Python Backend Developer role. Only Python skill is present, while all other required technical skills, relevant backend experience, and project evidence are missing. Education partially aligns, but the degree is still in progress, and the candidate does not meet location or other soft\u2011skill expectations."
+      "scoring_breakdown_summary": "The overall match score of 14.7 is derived by weighting five evaluation categories. Skills Match contributed 6.68 points (only Python matched). Relevant Experience contributed 0 points (no professional backend experience). Projects contributed 3.0 points (projects lack API, DB, Docker work). Education contributed 5.0 points (degree in progress). Additional Requirements contributed 0 points (no evidence of soft\u2011skill or preferred\u2011tech exposure). The sum of weighted scores yields the final score."
     },
     "recommendation": {
       "recommendation_category": "Low Match",
       "key_strengths": [
-        "Proficient in Python programming",
-        "Strong foundation in Java, Kotlin, and C",
-        "Experience with data science and machine learning concepts",
-        "Hands\u2011on work with Android development, IoT devices, and embedded systems"
+        "Proficient in Python as demonstrated through academic projects",
+        "Hands\u2011on experience with data\u2011science and machine\u2011learning libraries",
+        "Broad programming background (C, Java, Kotlin) and exposure to IoT/embedded systems",
+        "Current B.Tech (Information Technology) student, aligning with the required degree field"
       ],
       "relevant_skills": [
         "Python"
       ],
-      "relevant_experience_summary": "The candidate has no professional backend development experience. Their only work exposure is an internship focused on Android app development and IoT projects, which did not involve Python backend services, REST API design, relational databases, or containerization.",
+      "relevant_experience_summary": "The candidate has no professional backend development experience (0 years). Only an internship is listed, which does not satisfy the 1\u20133 years of backend experience required for the role.",
       "missing_requirements": [
         "FastAPI",
         "REST API development",
-        "PostgreSQL (relational database experience)",
-        "Git version control",
-        "Docker containerization",
-        "1\u20133 years of backend development experience",
-        "Completed bachelor's degree (currently pursuing)",
-        "Location in Chennai, India",
-        "Experience with AWS, Redis, LangChain, RAG, FAISS (preferred)",
-        "Demonstrated problem\u2011solving and teamwork in a backend context"
+        "PostgreSQL",
+        "Git",
+        "Docker",
+        "1\u20133 years of professional backend development experience",
+        "Completed bachelor's degree (degree still in progress)",
+        "Experience designing and implementing REST APIs",
+        "Experience integrating with relational databases",
+        "Experience containerizing applications with Docker",
+        "Preferred technologies: LangChain, RAG, FAISS, AWS, Redis",
+        "Demonstrated problem\u2011solving, teamwork, and communication skills in a professional setting"
       ],
       "areas_requiring_verification": [
-        "Any undocumented experience with Python backend frameworks (e.g., FastAPI, Flask)",
-        "Exposure to relational databases through coursework or personal projects",
-        "Practical use of Git and Docker in any setting (academic, personal, or freelance)",
-        "Willingness and ability to relocate to or work remotely from Chennai",
-        "Potential to quickly acquire required backend skills through training or self\u2011learning",
-        "Evidence of collaborative software development (code reviews, team projects)"
+        "Depth of Python usage in the internship and whether any backend components were built",
+        "Any unlisted exposure to FastAPI, REST APIs, PostgreSQL, Git, or Docker during coursework or personal projects",
+        "Exact graduation date and expected availability for full\u2011time employment",
+        "Evidence of collaborative work, code reviews, or version\u2011control practices during the internship",
+        "Problem\u2011solving and communication abilities as observed in past team or project settings"
       ],
-      "overall_jd_alignment_summary": "The candidate\u2019s profile shows minimal alignment with the Python Backend Developer role. While they possess Python knowledge and a solid technical foundation, they lack the core backend skills, required professional experience, and location criteria outlined in the JD. Consequently, the candidate is a low\u2011match and would require substantial upskilling and verification of hidden experience before being considered for this position."
+      "overall_jd_alignment_summary": "The candidate\u2019s profile aligns minimally with the Python Backend Developer role. While they possess Python programming ability and are pursuing a relevant degree, they lack all required backend technologies (FastAPI, REST API development, PostgreSQL, Git, Docker) and do not meet the 1\u20133 years of professional backend experience stipulated in the JD. Education is still in progress, and there is no evidence of the preferred AI/ML stack or soft\u2011skill competencies. Consequently, the overall alignment is low, and the candidate would require substantial upskilling and verification of any hidden experience before being considered a viable fit."
     }
   }
 ]

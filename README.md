@@ -2,41 +2,41 @@
 
 ## Overview
 
-A Python and LangChain based Resume Intelligence Platform that processes multiple PDF resumes, extracts candidate information and skills, analyzes experience, compares candidates with a Job Description, generates explainable scores and recruiter recommendations, and supports semantic candidate search.
+This project is a Python and LangChain-based Resume Intelligence Platform for analyzing resumes against job descriptions.
 
-## Features
+The system supports:
 
-* Multiple PDF resume processing
-* Resume text extraction using PyPDF
-* Resume text preprocessing
+* Multiple PDF resume uploads
+* Resume text extraction and preprocessing
 * Candidate information extraction
-* Technical skill extraction and categorization
+* Skills extraction
 * Experience classification
-* Job Description analysis
+* Job description analysis
 * Candidate-to-JD matching
-* Explainable candidate scoring (0–100)
-* Recruiter recommendation
-* Structured Pydantic output
-* JSON output generation
-* Hugging Face embeddings
-* FAISS vector database
-* LangChain semantic candidate search
-* Graceful handling of invalid resumes
-* Hallucination prevention through document-grounded prompts
+* Explainable candidate scoring
+* Recruiter recommendations
+* Structured JSON output
+* FAISS-based semantic candidate search
+* Incomplete and malformed PDF handling
+
+The system is designed as a recruiter decision-support tool and does not make final hiring decisions.
+
+---
 
 ## Technologies
 
-* Python
+* Python 3.11
 * LangChain
-* LangChain Core
 * LangChain Groq
-* LangChain Hugging Face
+* LangChain HuggingFace
 * Pydantic
 * PyPDF
 * FAISS
 * Sentence Transformers
 * Groq LLM
 * Hugging Face Embeddings
+
+---
 
 ## Project Structure
 
@@ -48,6 +48,8 @@ Assignment2_Resume_Intelligence_YourName/
 ├── preprocess.py
 ├── vector_store.py
 ├── semantic_search.py
+├── requirements.txt
+├── .env.example
 │
 ├── chains/
 │   ├── candidate_extraction.py
@@ -76,74 +78,70 @@ Assignment2_Resume_Intelligence_YourName/
 │   └── job_description/
 │
 ├── outputs/
-│   └── candidate_profiles.json
+│   ├── candidate_profiles.json
+│   └── faiss_index/
 │
 ├── resume_intelligence_strategy.md
 ├── test_log.md
-├── requirements.txt
-└── .env.example
+└── README.md
 ```
+
+---
 
 ## Installation
 
-Create and activate a Python virtual environment, then install the dependencies:
+Create and activate a virtual environment.
 
-```text
+Install the required packages:
+
+```bash
 pip install -r requirements.txt
 ```
 
+---
+
 ## Environment Variables
 
-Create a `.env` file locally:
+Create a `.env` file using `.env.example`.
 
 ```text
-GROQ_API_KEY=your_groq_api_key
+GROQ_API_KEY=your_groq_api_key_here
 ```
 
-Do not upload the `.env` file or expose the API key.
+Do not commit the actual `.env` file or API keys.
 
-The project also includes `.env.example` as a template.
+---
 
-## Adding Resumes
+## How to Run
 
-Place PDF resumes inside:
+Place resume PDF files inside:
 
 ```text
 data/resumes/
 ```
 
-Multiple resumes can be added.
-
-The system assigns candidate IDs such as:
-
-```text
-CAND001
-CAND002
-CAND003
-```
-
-Invalid or unreadable resumes are handled without stopping the processing of valid resumes.
-
-## Adding a Job Description
-
-Place a `.txt` or `.pdf` Job Description inside:
+Place the job description inside:
 
 ```text
 data/job_description/
 ```
 
-The application analyzes the Job Description and extracts:
+Run the application:
 
-* Required skills
-* Preferred skills
-* Required experience
-* Qualifications
-* Responsibilities
-* Additional requirements
+```bash
+python app.py
+```
 
-## Processing Pipeline
+The application provides options for:
 
-The application follows a multi-stage workflow:
+1. Running the complete resume intelligence pipeline
+2. Performing semantic candidate search
+
+---
+
+## Resume Processing Pipeline
+
+The application processes resumes through multiple stages:
 
 ```text
 PDF Resume
@@ -152,7 +150,7 @@ Text Extraction
     ↓
 Preprocessing
     ↓
-Candidate Information
+Candidate Information Extraction
     ↓
 Skills Extraction
     ↓
@@ -167,50 +165,79 @@ Explainable Scoring
 Recruiter Recommendation
     ↓
 Structured Candidate Profile
-    ↓
-FAISS Vector Store
-    ↓
-Semantic Candidate Search
 ```
 
-## Running the Application
+Each major stage uses separated prompt/chain logic.
 
-Run:
+---
 
-```text
-python app.py
-```
+## Structured Output
 
-The application provides three options:
+Candidate information is validated using Pydantic models.
 
-```text
-1. Process resumes and build/update FAISS
-2. Load existing FAISS and perform semantic search
-3. Exit
-```
-
-### Option 1
-
-Use this when:
-
-* Adding new resumes
-* Changing resumes
-* Changing the Job Description
-* Rebuilding the FAISS index
-
-This runs the complete LLM pipeline and creates:
+The application generates:
 
 ```text
 outputs/candidate_profiles.json
 ```
 
-It also builds the FAISS vector store.
+The structured profile contains candidate information, skills, experience, job matching, scoring, and recommendation information.
 
-### Option 2
+The project also demonstrates structured JSON parsing using LangChain output parsers.
 
-Use this when the FAISS index already exists and you only want to perform semantic searches.
+---
 
-Example queries:
+## Candidate Scoring
+
+Candidates receive an explainable score from **0–100**.
+
+The scoring weights used are:
+
+| Category                  | Weight |
+| ------------------------- | -----: |
+| Skills Match              |    40% |
+| Relevant Experience       |    25% |
+| Projects Alignment        |    15% |
+| Education & Qualification |    10% |
+| Additional Requirements   |    10% |
+
+The score is based only on information available in the resume and job description.
+
+---
+
+## Recruiter Recommendation
+
+The system generates one of the following categories:
+
+* Strong Match
+* Potential Match
+* Needs Further Review
+* Low Match
+
+The recommendation provides supporting information such as:
+
+* Strengths
+* Relevant skills
+* Relevant experience
+* Missing requirements
+* Verification areas
+* Overall JD alignment
+
+The recommendation is intended to support recruiters and is not an autonomous hiring decision.
+
+---
+
+## Semantic Candidate Search
+
+Candidate professional information is converted into embeddings using:
+
+```text
+sentence-transformers/all-MiniLM-L6-v2
+```
+
+FAISS is used as the vector database.
+
+Example searches:
 
 ```text
 developer
@@ -228,136 +255,104 @@ Python backend developer
 AI and machine learning candidate
 ```
 
-```text
-candidate with React and Node.js experience
-```
+The system also supports natural-language semantic queries rather than only exact keyword matching.
 
-The search uses embeddings and FAISS semantic retrieval rather than exact keyword matching only.
+A relevance threshold is applied to FAISS similarity distance. Lower distance represents greater semantic similarity.
 
-## Structured Output
-
-Pydantic models are used to validate candidate profiles and other structured results.
-
-The project also demonstrates structured JSON parsing through the configured output parsers.
-
-The final candidate information is stored in:
-
-```text
-outputs/candidate_profiles.json
-```
-
-## Explainable Scoring
-
-Candidates receive an overall score from:
-
-```text
-0–100
-```
-
-The score is based on job-relevant evidence from the resume and Job Description.
-
-The scoring includes areas such as:
-
-* Skills
-* Experience
-* Projects
-* Education
-* Additional requirements
-
-The system does not use unrelated personal characteristics for scoring.
-
-## Recruiter Recommendation
-
-The system generates a recruiter-support recommendation such as:
-
-* Strong Match
-* Potential Match
-* Needs Further Review
-* Low Match
-
-The recommendation includes relevant strengths, missing requirements, and areas that may require verification.
-
-The system is intended to assist recruiters and does not make the final hiring decision.
-
-## Semantic Search
-
-Professional information is converted into embeddings and stored in FAISS.
-
-Search considers information such as:
-
-* Skills
-* Experience
-* Projects
-* Technologies
-* Role history
-* Certifications
-* Relevant education
-
-Example:
-
-```text
-Search Query > Java developer with Spring Boot experience
-```
-
-The system returns semantically relevant candidate profiles.
-
-If no sufficiently relevant candidate is found, the application returns:
+If no sufficiently relevant candidate is found, the system returns:
 
 ```text
 No sufficiently relevant candidate profiles were found for this search.
 ```
 
-## Hallucination Prevention
+---
 
-The prompts instruct the LLM to:
+## Error Handling
 
-* Use only the supplied resume or Job Description information
-* Never invent missing information
-* Return `Not available` or `null` when information is missing
-* Avoid unsupported assumptions
-* Keep matching and scoring grounded in resume and JD evidence
+The application handles:
 
-## Privacy and Responsible Evaluation
+* Empty resumes
+* Incomplete resumes
+* Malformed/corrupted PDFs
+* PDF extraction failures
+* LLM/parser failures
+* Missing candidate information
+* No relevant semantic-search results
 
-Only job-relevant professional information is used for candidate evaluation.
+An invalid resume should not prevent valid resumes from being processed.
 
-The system does not intentionally use or infer:
+---
+
+## Privacy and Responsible Use
+
+The system uses only job-relevant professional information.
+
+It should not infer or use protected or unrelated personal characteristics such as:
 
 * Gender
 * Religion
 * Caste
 * Ethnicity
-* Marital status
 * Disability
-* Photograph-based information
-* Other protected personal characteristics
+* Marital status
+* Photograph-based characteristics
 
-Use synthetic, sample, or authorized resumes for testing.
+Only synthetic, sample, or authorized resumes should be used for testing.
+
+API keys and unnecessary personal information should not be included in logs or submitted files.
+
+---
 
 ## Testing
 
-Actual application tests and results are documented in:
+Testing is documented in:
 
 ```text
 test_log.md
 ```
 
-Testing includes resume processing, candidate extraction, Job Description analysis, matching, scoring, recommendation, invalid resume handling, and semantic search.
+The test log covers:
+
+* Resume processing
+* Candidate extraction
+* Skills extraction
+* Experience classification
+* JD analysis
+* Candidate matching
+* Explainable scoring
+* Recruiter recommendation
+* JSON output
+* FAISS vector store
+* Semantic search
+* No-match search
+* Incomplete resume handling
+* Malformed PDF handling
+* Full pipeline execution
+
+---
+
+## Documentation
+
+Additional implementation strategy is available in:
+
+```text
+resume_intelligence_strategy.md
+```
+
+It describes the resume processing workflow, LangChain pipeline, prompts, structured outputs, scoring, embeddings, semantic search, and hallucination-control approach.
+
+---
 
 ## Known Limitations
 
-* LLM results depend on the configured Groq model and API limits.
-* PDF quality can affect text extraction.
-* Semantic search quality depends on the embedding model and indexed candidate information.
-* API credentials are required for LLM-based processing.
-* Recruiter recommendations are decision-support outputs and require human review.
+* LLM output depends on the quality and completeness of the input documents.
+* Semantic search relevance depends on the embedding model and configured similarity threshold.
+* Resume extraction quality depends on the PDF structure and readability.
+* API rate limits may affect LLM processing.
+* Recruiter recommendations require human review before making employment decisions.
 
-## Requirements
+---
 
-Install all dependencies using:
+## Conclusion
 
-```text
-pip install -r requirements.txt
-```
-
-The exact package versions used for the project are documented in `requirements.txt`.
+This project demonstrates a multi-stage Python and LangChain workflow for resume intelligence, including document processing, structured extraction, JD matching, explainable scoring, recruiter recommendations, embeddings, FAISS vector storage, and semantic candidate search.

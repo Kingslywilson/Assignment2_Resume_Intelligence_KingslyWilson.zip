@@ -144,8 +144,14 @@ Candidates are categorized into four clear analytical categories:
 - **FAISS (`faiss-cpu`)**: Stores candidate vector representations locally in `outputs/faiss_index/`.
 - **Metadata Included**: `candidate_id`, `candidate_name`, `resume_filename`, `skills_summary`, `experience_category`, `total_experience`.
 
-### 9.3 Retriever & Distance Thresholding
-- Uses LangChain's vector store retriever interface.
-- Applies an L2 distance threshold (`SIMILARITY_DISTANCE_THRESHOLD = 1.45`).
-- If no candidate falls within the relevance threshold or vector index is empty, returns:
+### 9.3 Retriever & Semantic Candidate Search
+
+- Uses LangChain's vector store retriever interface with FAISS.
+- Uses similarity-based retrieval to find the top-k candidate profiles relevant to a natural-language query.
+- The retriever is configured using LangChain's `as_retriever()` interface.
+- Candidate results are ranked according to semantic similarity between the query and the professional candidate profile embeddings.
+- The search focuses on professional information such as skills, experience, projects, technologies, certifications, and role history.
+- Personal contact information such as email address, phone number, and physical address is not used as semantic search content.
+- If the vector index is unavailable, empty, or the search produces no documents, the system returns:
+
   `"No sufficiently relevant candidate profiles were found for this search."`

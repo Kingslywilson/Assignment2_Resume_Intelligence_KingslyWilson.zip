@@ -1,5 +1,5 @@
 import os
-from typing import List, Dict, Any, Tuple
+from typing import List
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
@@ -33,7 +33,6 @@ def build_candidate_document(profile: CandidateProfile) -> Document:
 
     doc_content = (
         f"Candidate ID: {profile.candidate_id}\n"
-        f"Name: {profile.candidate_name}\n"
         f"Experience Level: {exp.experience_category}\n"
         f"Total Experience: {exp.total_professional_experience}\n"
         f"Relevant Experience: {exp.relevant_experience}\n"
