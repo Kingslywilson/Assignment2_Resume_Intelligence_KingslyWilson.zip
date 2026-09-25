@@ -111,6 +111,27 @@ GROQ_API_KEY=your_groq_api_key_here
 Do not commit the actual `.env` file or API keys.
 
 ---
+## How to Add Resumes
+
+Copy multiple PDF resumes into:
+
+data/resumes/
+
+The application automatically discovers all `.pdf` files in this directory,
+assigns candidate IDs such as `CAND001`, `CAND002`, etc., and processes
+each valid resume.
+
+If one resume is invalid or malformed, the application reports the error
+and continues processing the remaining valid resumes.
+
+## How to Provide a Job Description
+
+Place a `.txt` or `.pdf` Job Description inside:
+
+data/job_description/
+
+The application loads the first available JD file and uses it for
+candidate-to-JD analysis.
 
 ## How to Run
 

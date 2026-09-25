@@ -43,8 +43,7 @@
 ### CAND001 — Kingsly Wilson K
 
 * Name: Kingsly Wilson K
-* Email: [wilsonkingsly71@gmail.com](mailto:wilsonkingsly71@gmail.com)
-* Phone: +91-7540050379
+
 * Education: B.Tech — Information Technology
 * Institution: Velammal Engineering College
 * Graduation Year: 2026
@@ -56,7 +55,6 @@
 ### CAND002 — THIRUKARTHIKEYAN G
 
 * Name: THIRUKARTHIKEYAN G
-* Phone: +91 6384160784
 * Location: Tenkasi District
 * Education: B.Tech — Information Technology, Pursuing
 * Job Titles: Android App Development Intern; IoT with Embedded Systems In-Plant Trainee

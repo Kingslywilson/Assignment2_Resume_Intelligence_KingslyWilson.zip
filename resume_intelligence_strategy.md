@@ -2,7 +2,7 @@
 
 ## 1. Executive Overview
 
-The **Intelligent Resume Intelligence Platform** is an enterprise-grade, multi-stage NLP and LLM pipeline built with **LangChain**, **Pydantic**, **FAISS**, and **Groq LLM**. It processes, parses, evaluates, scores, and indexes candidate resumes against Job Descriptions (JDs) with total transparency, zero hallucination, strict schema validation, and semantic search capability.
+The **Intelligent Resume Intelligence Platform** is an enterprise-grade, multi-stage NLP and LLM pipeline built with **LangChain**, **Pydantic**, **FAISS**, and **Groq LLM**. It processes, parses, evaluates, scores, and indexes candidate resumes against Job Descriptions (JDs) with total transparency,hallucination reduction and strict unsupported-inference controls, strict schema validation, and semantic search capability.
 
 ---
 
@@ -147,11 +147,12 @@ Candidates are categorized into four clear analytical categories:
 ### 9.3 Retriever & Semantic Candidate Search
 
 - Uses LangChain's vector store retriever interface with FAISS.
-- Uses similarity-based retrieval to find the top-k candidate profiles relevant to a natural-language query.
-- The retriever is configured using LangChain's `as_retriever()` interface.
-- Candidate results are ranked according to semantic similarity between the query and the professional candidate profile embeddings.
-- The search focuses on professional information such as skills, experience, projects, technologies, certifications, and role history.
-- Personal contact information such as email address, phone number, and physical address is not used as semantic search content.
-- If the vector index is unavailable, empty, or the search produces no documents, the system returns:
+- Uses similarity-based retrieval to find candidate profiles relevant to a natural-language query.
+- FAISS similarity scores are additionally checked using an L2 distance threshold.
+- The configured distance threshold is `1.20`.
+- Lower FAISS distance indicates greater semantic similarity.
+- Candidates whose distance exceeds the threshold are excluded.
+- The search uses professional information such as skills, experience, projects, technologies, certifications, and role history.
+- If no candidates satisfy the relevance threshold, the system returns:
 
   `"No sufficiently relevant candidate profiles were found for this search."`
